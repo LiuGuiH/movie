@@ -58,7 +58,7 @@
     <div class="container">
         <div class="row ipad-width">
             <div class="left-content">
-                <a href="index.jsp"><img class="md-logo" src="images/logo1.png" alt=""></a>
+                <a href="index1.jsp"><img class="md-logo" src="images/logo1.png" alt=""></a>
                 <h1>Coming soon</h1>
                 <p>We are working hard to get back to you in</p>
                 <div class="row">

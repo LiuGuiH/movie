@@ -107,7 +107,7 @@
                         <option value="saab">-- Choose option 2--</option>
                     </select>
                     <a href="userfavoritelist.jsp" class="list"><i class="ion-ios-list-outline active"></i></a>
-                    <a  href="userfavoritegrid.jsp" class="grid"><i class="ion-grid "></i></a>
+                    <a href="userfavoritegrid.jsp" class="grid"><i class="ion-grid "></i></a>
                 </div>
                 <div class="flex-wrap-movielist user-fav-list">
                     <div class="movie-item-style-2">

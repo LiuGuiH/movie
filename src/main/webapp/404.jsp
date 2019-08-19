@@ -58,10 +58,10 @@
     <div class="container">
         <div class="row">
             <div class="middle-content">
-                <a href="index.jsp"><img class="md-logo" src="images/logo1.png" alt=""></a>
+                <a href="index1.jsp"><img class="md-logo" src="images/logo1.png" alt=""></a>
                 <img src="images/uploads/err-img.png" alt="">
                 <h1>Page not found</h1>
-                <a href="index.jsp" class="redbtn">go home</a>
+                <a href="index1.jsp" class="redbtn">go home</a>
             </div>
         </div>
     </div>

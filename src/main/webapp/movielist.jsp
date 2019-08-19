@@ -88,7 +88,7 @@
                         <option value="date">Release date Ascending</option>
                     </select>
                     <a href="movielist.jsp" class="list"><i class="ion-ios-list-outline active"></i></a>
-                    <a  href="moviegrid.jsp" class="grid"><i class="ion-grid"></i></a>
+                    <a href="moviegrid.jsp" class="grid"><i class="ion-grid"></i></a>
                 </div>
                 <div class="movie-item-style-2">
                     <img src="images/uploads/mv1.jpg" alt="">

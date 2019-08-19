@@ -4,19 +4,29 @@ package controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pojo.Movie;
 import pojo.User;
+import service.MovieService;
 import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+
 
 @Controller
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private MovieService movieService;
 
     @RequestMapping("/")
-    public String main(){
-        return "index";
+    public String main(HttpServletRequest request){
+        List<Movie> movieList=movieService.selectAll();
+        request.getSession().setAttribute("movies",movieList);
+        System.out.println(movieList);
+        System.out.println(1111);
+        return "index1";
     }
 
     @RequestMapping("/login")

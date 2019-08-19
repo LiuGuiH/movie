@@ -1024,7 +1024,7 @@
                     <div class="slider-nav">
                         <div class="item">
                             <div class="trailer-img">
-                                <img src="images/uploads/trailer7.jpg"  alt="photo by Barn Images">
+                                <img src="images/uploads/trailer7.jpg" alt="photo by Barn Images">
                             </div>
                             <div class="trailer-infor">
                                 <h4 class="desc">Wonder Woman</h4>
@@ -1033,7 +1033,7 @@
                         </div>
                         <div class="item">
                             <div class="trailer-img">
-                                <img src="images/uploads/trailer2.jpg"  alt="photo by Barn Images">
+                                <img src="images/uploads/trailer2.jpg" alt="photo by Barn Images">
                             </div>
                             <div class="trailer-infor">
                                 <h4 class="desc">Oblivion: Official Teaser Trailer</h4>
@@ -1060,7 +1060,7 @@
                         </div>
                         <div class="item">
                             <div class="trailer-img">
-                                <img src="images/uploads/trailer4.png"  alt="photo by Wojciech Szaturski">
+                                <img src="images/uploads/trailer4.png" alt="photo by Wojciech Szaturski">
                             </div>
                             <div class="trailer-infor">
                                 <h4 class="desc">Beauty and the Beast: Official Teaser Trailer 2</h4>
@@ -1069,7 +1069,7 @@
                         </div>
                         <div class="item">
                             <div class="trailer-img">
-                                <img src="images/uploads/trailer5.jpg"  alt="photo by Wojciech Szaturski">
+                                <img src="images/uploads/trailer5.jpg" alt="photo by Wojciech Szaturski">
                             </div>
                             <div class="trailer-infor">
                                 <h4 class="desc">Fast&Furious 8</h4>

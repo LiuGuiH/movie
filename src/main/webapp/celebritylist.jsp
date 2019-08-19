@@ -89,7 +89,7 @@
                         <option value="date">Release date Ascending</option>
                     </select>
                     <a href="celebritylist.jsp" class="list"><i class="ion-ios-list-outline active"></i></a>
-                    <a  href="celebritygrid01.jsp" class="grid"><i class="ion-grid "></i></a>
+                    <a href="celebritygrid01.jsp" class="grid"><i class="ion-grid "></i></a>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
