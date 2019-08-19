@@ -141,7 +141,7 @@
                         <span></span>
                     </div>
                 </div>
-                <a href="index1.html"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
+                <a href="index.jsp"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -154,9 +154,9 @@
                             Home <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="index1.html">Home 01</a></li>
-                            <li><a href="homev2.html">Home 02</a></li>
-                            <li><a href="homev3.html">Home 03</a></li>
+                            <li><a href="index.jsp">Home 01</a></li>
+                            <li><a href="homev2.jsp">Home 02</a></li>
+                            <li><a href="homev3.jsp">Home 03</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -167,13 +167,13 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
                                 <ul class="dropdown-menu level2">
-                                    <li><a href="moviegrid.html">Movie grid</a></li>
-                                    <li><a href="moviegridfw.html">movie grid full width</a></li>
+                                    <li><a href="moviegrid.jsp">Movie grid</a></li>
+                                    <li><a href="moviegridfw.jsp">movie grid full width</a></li>
                                 </ul>
                             </li>
-                            <li><a href="movielist.html">Movie list</a></li>
-                            <li><a href="moviesingle.html">Movie single</a></li>
-                            <li class="it-last"><a href="seriessingle.html">Series single</a></li>
+                            <li><a href="movielist.jsp">Movie list</a></li>
+                            <li><a href="moviesingle.jsp">Movie single</a></li>
+                            <li class="it-last"><a href="seriessingle.jsp">Series single</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -181,10 +181,10 @@
                             celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="celebritygrid01.html">celebrity grid 01</a></li>
-                            <li><a href="celebritygrid02.html">celebrity grid 02 </a></li>
-                            <li><a href="celebritylist.html">celebrity list</a></li>
-                            <li class="it-last"><a href="celebritysingle.html">celebrity single</a></li>
+                            <li><a href="celebritygrid01.jsp">celebrity grid 01</a></li>
+                            <li><a href="celebritygrid02.jsp">celebrity grid 02 </a></li>
+                            <li><a href="celebritylist.jsp">celebrity list</a></li>
+                            <li class="it-last"><a href="celebritysingle.jsp">celebrity single</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -192,9 +192,9 @@
                             news <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="bloglist.html">blog List</a></li>
-                            <li><a href="bloggrid.html">blog Grid</a></li>
-                            <li class="it-last"><a href="blogdetail.html">blog Detail</a></li>
+                            <li><a href="bloglist.jsp">blog List</a></li>
+                            <li><a href="bloggrid.jsp">blog Grid</a></li>
+                            <li class="it-last"><a href="blogdetail.jsp">blog Detail</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -202,10 +202,10 @@
                             community <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="userfavoritegrid.html">user favorite grid</a></li>
-                            <li><a href="userfavoritelist.html">user favorite list</a></li>
-                            <li><a href="userprofile.html">user profile</a></li>
-                            <li class="it-last"><a href="userrate.html">user rate</a></li>
+                            <li><a href="userfavoritegrid.jsp">user favorite grid</a></li>
+                            <li><a href="userfavoritelist.jsp">user favorite list</a></li>
+                            <li><a href="userprofile.jsp">user profile</a></li>
+                            <li class="it-last"><a href="userrate.jsp">user rate</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -215,9 +215,9 @@
                             pages <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
-                            <li><a href="landing.html">Landing</a></li>
-                            <li><a href="404.html">404 Page</a></li>
-                            <li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
+                            <li><a href="landing.jsp">Landing</a></li>
+                            <li><a href="404.jsp">404 Page</a></li>
+                            <li class="it-last"><a href="comingsoon.jsp">Coming soon</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Help</a></li>
@@ -394,7 +394,7 @@
                                                 <img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -408,7 +408,7 @@
                                                 <img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -422,7 +422,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -436,7 +436,7 @@
                                                 <img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -450,7 +450,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -464,7 +464,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -478,7 +478,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -492,7 +492,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -506,7 +506,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -526,7 +526,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -540,7 +540,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -554,7 +554,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -568,7 +568,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -582,7 +582,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -602,7 +602,7 @@
                                                 <img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -616,7 +616,7 @@
                                                 <img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -630,7 +630,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -644,7 +644,7 @@
                                                 <img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -658,7 +658,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -678,7 +678,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -692,7 +692,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -706,7 +706,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -720,7 +720,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -734,7 +734,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -768,7 +768,7 @@
                                                 <img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -782,7 +782,7 @@
                                                 <img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -796,7 +796,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -810,7 +810,7 @@
                                                 <img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -824,7 +824,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -844,7 +844,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -858,7 +858,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -872,7 +872,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -886,7 +886,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -900,7 +900,7 @@
                                                 <img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -914,7 +914,7 @@
                                                 <img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -928,7 +928,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -942,7 +942,7 @@
                                                 <img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -956,7 +956,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -970,7 +970,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -990,7 +990,7 @@
                                                 <img src="images/uploads/mv-item1.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -1004,7 +1004,7 @@
                                                 <img src="images/uploads/mv-item2.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -1018,7 +1018,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -1032,7 +1032,7 @@
                                                 <img src="images/uploads/mv-item4.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -1046,7 +1046,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -1060,7 +1060,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -1074,7 +1074,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -1088,7 +1088,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -1102,7 +1102,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -1122,7 +1122,7 @@
                                                 <img src="images/uploads/mv-item5.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Interstellar</a></h6>
@@ -1136,7 +1136,7 @@
                                                 <img src="images/uploads/mv-item6.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The revenant</a></h6>
@@ -1150,7 +1150,7 @@
                                                 <img src="images/uploads/mv-item7.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -1164,7 +1164,7 @@
                                                 <img src="images/uploads/mv-item8.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">The walk</a></h6>
@@ -1178,7 +1178,7 @@
                                                 <img src="images/uploads/mv-item3.jpg" alt="" width="185" height="284">
                                             </div>
                                             <div class="hvr-inner">
-                                                <a  href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
                                                 <h6><a href="#">Die hard</a></h6>
@@ -1440,7 +1440,7 @@
     <div class="container">
         <div class="flex-parent-ft">
             <div class="flex-child-ft item1">
-                <a href="index1.html"><img class="logo" src="images/logo1.png" alt=""></a>
+                <a href="index.jsp"><img class="logo" src="images/logo1.png" alt=""></a>
                 <p>5th Avenue st, manhattan<br>
                     New York, NY 10001</p>
                 <p>Call us: <a href="#">(+01) 202 342 6789</a></p>
