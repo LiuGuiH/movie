@@ -1,0 +1,120 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<!-- BEGIN | Header -->
+<header class="ht-header">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-custom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header logo">
+                <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <a href="index.jsp"><img class="logo" src="images/logo1.png" alt="" width="119" height="58"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav flex-child-menu menu-left">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                            Home <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="index.jsp">Home 01</a></li>
+                            <li><a href="homev2.jsp">Home 02</a></li>
+                            <li><a href="homev3.jsp">Home 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            movies<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
+                                <ul class="dropdown-menu level2">
+                                    <li><a href="moviegrid.jsp">Movie grid</a></li>
+                                    <li><a href="moviegridfw.jsp">movie grid full width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="movielist.jsp">Movie list</a></li>
+                            <li><a href="moviesingle.jsp">Movie single</a></li>
+                            <li class="it-last"><a href="seriessingle.jsp">Series single</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            celebrities <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="celebritygrid01.jsp">celebrity grid 01</a></li>
+                            <li><a href="celebritygrid02.jsp">celebrity grid 02 </a></li>
+                            <li><a href="celebritylist.jsp">celebrity list</a></li>
+                            <li class="it-last"><a href="celebritysingle.jsp">celebrity single</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            news <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="bloglist.jsp">blog List</a></li>
+                            <li><a href="bloggrid.jsp">blog Grid</a></li>
+                            <li class="it-last"><a href="blogdetail.jsp">blog Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            community <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="userfavoritegrid.jsp">user favorite grid</a></li>
+                            <li><a href="userfavoritelist.jsp">user favorite list</a></li>
+                            <li><a href="userprofile.jsp">user profile</a></li>
+                            <li class="it-last"><a href="userrate.jsp">user rate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav flex-child-menu menu-right">
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                            pages <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="landing.jsp">Landing</a></li>
+                            <li><a href="404.jsp">404 Page</a></li>
+                            <li class="it-last"><a href="comingsoon.jsp">Coming soon</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Help</a></li>
+                    <c:if test="${user!=null}">
+                        <li><a>欢迎您：${user.username}</a></li>
+                        <li><a href="logout">退出登录</a></li>
+                    </c:if>
+                    <c:if test="${user==null}">
+                        <li class="loginLink"><a href="#">Login</a></li>
+                        <li class="btn signupLink"><a href="#">Sign up</a></li>
+                    </c:if>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <!-- top search form -->
+        <div class="top-search">
+            <select>
+                <option value="united">TV show</option>
+                <option value="saab">Others</option>
+            </select>
+            <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+        </div>
+    </div>
+</header>
+<!-- END | Header -->
