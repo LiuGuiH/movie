@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: liuguihua
   Date: 2019/8/19
-  Time: 9:01
+  Time: 9:02
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1> movie listing - grid</h1>
+                    <h1> movie listing - list</h1>
                     <ul class="breadcumb">
                         <li class="active"><a href="#">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
@@ -72,84 +72,71 @@
         </div>
     </div>
 </div>
-<div class="page-single">
+<div class="page-single movie_list">
     <div class="container">
-        <div class="row ipad-width">
+        <div class="row ipad-width2">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Found <span>1,608 movies</span> in total</p>
-                    <label>Sort by:</label>
-                    <select>
-                        <option value="popularity">Popularity Descending</option>
-                        <option value="popularity">Popularity Ascending</option>
-                        <option value="rating">Rating Descending</option>
-                        <option value="rating">Rating Ascending</option>
-                        <option value="date">Release date Descending</option>
-                        <option value="date">Release date Ascending</option>
-                    </select>
-                    <a href="movielist" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="moviegrid" class="grid"><i class="ion-grid active"></i></a>
+                    <p>Found <span>${tvPlays.size()} tvPlays</span> in total</p>
+                    <a href="tvplaylist" class="list"><i class="ion-ios-list-outline active"></i></a>
                 </div>
-                <div class="flex-wrap-movielist">
-
-                        <c:if test="${!empty pageInfo.list }">
-                            <c:forEach items="${pageInfo.list}" var="movie">
-                                <div class="movie-item-style-2 movie-item-style-1">
-                                    <img src="${movie.movieuri}" alt="">
-                                    <div class="hvr-inner">
-                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                    </div>
-                                    <div class="mv-item-infor">
-                                        <h6><a href="#">${movie.moviename}</a></h6>
-                                        <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
-                                    </div>
+                <div class="result-content">
+                    <c:if test="${!empty pageInfo.list }">
+                        <c:forEach items="${pageInfo.list}" var="tvplay">
+                            <div class="movie-item-style-2">
+                                <img src="${tvplay.tvuri}" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="moviesingle.jsp">${tvplay.tvname}</a></h6>
+                                    <p class="rate"><i class="ion-android-star"></i><span>${tvplay.tvstar}</span> /10</p>
+                                    <p class="describe">${tvplay.tvoverview}</p>
+                                    <p>Director: <a href="#">Joss Whedon</a></p>
+                                    <p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
                                 </div>
-                            </c:forEach>
-                        </c:if>
+                            </div>
+                        </c:forEach>
+                    </c:if>
+                    <hr style="height:1px;border:none;border-top:1px solid #ccc;" />
+                    <!-- 分页导航栏 -->
+
+                    <!-- 分页信息 -->
+
+                    <!-- 分页文字信息，其中分页信息都封装在pageInfo中 -->
+                    <div class="col-md-6">
+                        当前第：${pageInfo.pageNum}页，总共：${pageInfo.pages}页，总共：${pageInfo.total}条记录
+                    </div>
+
+                    <!-- 分页条 -->
+                    <div class="col-md-6">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li><a href="tvplaylist?pn=1" rel="external nofollow" >首页</a></li>
+                                <c:if test="${pageInfo.hasPreviousPage }">
+                                    <li>
+                                        <a href="tvplaylist?pn=${pageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
+                                            <span aria-hidden="true">«</span>
+                                        </a>
+                                    </li>
+                                </c:if>
+                                <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
+                                    <c:if test="${page_Num == pageInfo.pageNum }">
+                                        <li class="active"><a href="#" rel="external nofollow" >${ page_Num}</a></li>
+                                    </c:if>
+                                    <c:if test="${page_Num != pageInfo.pageNum }">
+                                        <li><a href="tvplaylist?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>
+                                    </c:if>
+                                </c:forEach>
+                                <c:if test="${pageInfo.hasNextPage }">
+                                    <li>
+                                        <a href="tvplaylist?pn=${pageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
+                                            <span aria-hidden="true">»</span>
+                                        </a>
+                                    </li>
+                                </c:if>
+                                <li><a href="tvplaylist?pn=${pageInfo.pages}" rel="external nofollow" >末页</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                        <hr style="height:1px;border:none;border-top:1px solid #ccc;" />
-                        <!-- 分页导航栏 -->
-
-                        <!-- 分页信息 -->
-
-                        <!-- 分页文字信息，其中分页信息都封装在pageInfo中 -->
-                        <div class="col-md-6">
-                            当前第：${pageInfo.pageNum}页，总共：${pageInfo.pages}页，总共：${pageInfo.total}条记录
-                        </div>
-
-                        <!-- 分页条 -->
-                        <div class="col-md-6">
-                            <nav aria-label="Page navigation">
-                                <ul class="pagination">
-                                    <li><a href="moviegrid?pn=1" rel="external nofollow" >首页</a></li>
-                                    <c:if test="${pageInfo.hasPreviousPage }">
-                                        <li>
-                                            <a href="moviegrid?pn=${pageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
-                                                <span aria-hidden="true">«</span>
-                                            </a>
-                                        </li>
-                                    </c:if>
-
-                                    <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
-                                        <c:if test="${page_Num == pageInfo.pageNum }">
-                                            <li class="active"><a href="#" rel="external nofollow" >${ page_Num}</a></li>
-                                        </c:if>
-                                        <c:if test="${page_Num != pageInfo.pageNum }">
-                                            <li><a href="moviegrid?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>
-                                        </c:if>
-                                    </c:forEach>
-                                    <c:if test="${pageInfo.hasNextPage }">
-                                        <li>
-                                            <a href="moviegrid?pn=${pageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
-                                                <span aria-hidden="true">»</span>
-                                            </a>
-                                        </li>
-                                    </c:if>
-                                    <li><a href="moviegrid?pn=${pageInfo.pages}" rel="external nofollow" >末页</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="sidebar">
@@ -174,13 +161,18 @@
                                             <option value="Action5">Action 5</option>
                                         </select>
                                     </div>
+
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Rating Range</label>
+
                                     <select>
                                         <option value="range">-- Select the rating range below --</option>
                                         <option value="saab">-- Select the rating range below --</option>
+                                        <option value="saab">-- Select the rating range below --</option>
+                                        <option value="saab">-- Select the rating range below --</option>
                                     </select>
+
                                 </div>
                                 <div class="col-md-12 form-it">
                                     <label>Release Year</label>
@@ -189,12 +181,16 @@
                                             <select>
                                                 <option value="range">From</option>
                                                 <option value="number">10</option>
+                                                <option value="number">20</option>
+                                                <option value="number">30</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <select>
                                                 <option value="range">To</option>
                                                 <option value="number">20</option>
+                                                <option value="number">30</option>
+                                                <option value="number">40</option>
                                             </select>
                                         </div>
                                     </div>

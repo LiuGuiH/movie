@@ -87,250 +87,68 @@
                         <option value="date">Release date Descending</option>
                         <option value="date">Release date Ascending</option>
                     </select>
-                    <a href="movielist.jsp" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="moviegridfw.jsp" class="grid"><i class="ion-grid active"></i></a>
+                    <a href="movielist" class="list"><i class="ion-ios-list-outline "></i></a>
+                    <a href="moviegridfw" class="grid"><i class="ion-grid active"></i></a>
                 </div>
                 <div class="flex-wrap-movielist mv-grid-fw">
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv1.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">oblivion</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv2.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">into the wild</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.8</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item3.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">Die hard</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item4.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">The walk</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv3.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">blade runner  </a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.3</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv4.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">Mulholland pride</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.2</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv5.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">skyfall: evil of boss</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.0</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item1.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">Interstellar</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-
-                        <img src="images/uploads/mv-item2.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">The revenant</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-it10.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">harry potter</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-it11.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">guardians galaxy</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-it12.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">the godfather</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item6.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">blue velvet</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item7.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">gravity</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item8.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">southpaw</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-it9.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">jurassic park</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item9.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">the forest</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item10.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">spectre</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item11.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">strager things</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv-item12.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">la la land</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.4</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv1.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">oblivion</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-                        </div>
-                    </div>
-                    <div class="movie-item-style-2 movie-item-style-1">
-                        <img src="images/uploads/mv2.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="#">into the wild</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>7.8</span> /10</p>
-                        </div>
-                    </div>
+                        <c:if test="${!empty pageInfo.list }">
+                            <c:forEach items="${pageInfo.list}" var="movie">
+                                <div class="movie-item-style-2 movie-item-style-1">
+                                    <img src="${movie.movieuri}" alt="">
+                                    <div class="hvr-inner">
+                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                    </div>
+                                    <div class="mv-item-infor">
+                                        <h6><a href="#">${movie.moviename}</a></h6>
+                                        <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                        </c:if>
 
                 </div>
-                <div class="topbar-filter">
-                    <label>Movies per page:</label>
-                    <select>
-                        <option value="range">20 Movies</option>
-                        <option value="saab">10 Movies</option>
-                    </select>
 
-                    <div class="pagination2">
-                        <span>Page 1 of 2:</span>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">...</a>
-                        <a href="#">78</a>
-                        <a href="#">79</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
-                    </div>
+                <hr style="height:1px;border:none;border-top:1px solid #ccc;" />
+                <!-- 分页导航栏 -->
+
+                <!-- 分页信息 -->
+
+                <!-- 分页文字信息，其中分页信息都封装在pageInfo中 -->
+                <div class="col-md-6">
+                    当前第：${pageInfo.pageNum}页，总共：${pageInfo.pages}页，总共：${pageInfo.total}条记录
+                </div>
+
+                <!-- 分页条 -->
+                <div class="col-md-6">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li><a href="moviegridfw?pn=1" rel="external nofollow" >首页</a></li>
+                            <c:if test="${pageInfo.hasPreviousPage }">
+                                <li>
+                                    <a href="moviegridfw?pn=${pageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                            </c:if>
+
+                            <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
+                                <c:if test="${page_Num == pageInfo.pageNum }">
+                                    <li class="active"><a href="#" rel="external nofollow" >${ page_Num}</a></li>
+                                </c:if>
+                                <c:if test="${page_Num != pageInfo.pageNum }">
+                                    <li><a href="moviegridfw?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>
+                                </c:if>
+                            </c:forEach>
+                            <c:if test="${pageInfo.hasNextPage }">
+                                <li>
+                                    <a href="moviegridfw?pn=${pageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+                            </c:if>
+                            <li><a href="moviegridfw?pn=${pageInfo.pages}" rel="external nofollow" >末页</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

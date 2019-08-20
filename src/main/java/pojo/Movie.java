@@ -355,4 +355,21 @@ public class Movie {
     public void setUserid(Integer userid) {
         this.userid = userid;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieid=" + movieid +
+                ", moviename='" + moviename + '\'' +
+                ", moviecover='" + moviecover + '\'' +
+                ", movieuri='" + movieuri + '\'' +
+                ", movietype='" + movietype + '\'' +
+                ", moviefavoritenum=" + moviefavoritenum +
+                ", moviestar=" + moviestar +
+                ", movieoverview='" + movieoverview + '\'' +
+                ", moviereviewid=" + moviereviewid +
+                ", moviecastcrewid=" + moviecastcrewid +
+                ", userid=" + userid +
+                '}';
+    }
 }

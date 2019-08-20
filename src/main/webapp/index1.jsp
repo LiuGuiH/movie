@@ -92,7 +92,7 @@
             <div class="col-md-8">
                 <div class="title-hd">
                     <h2>in theater</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="movielist" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="tabs">
                     <ul class="tab-links">
@@ -105,7 +105,7 @@
                         <div id="tab1" class="tab active">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie">
+                                    <c:forEach items="${movies}" var="movie" begin="0" end="11">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -127,7 +127,7 @@
                         <div id="tab2" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie" begin="3" end="7">
+                                    <c:forEach items="${movies}" var="movie" begin="5" end="9">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -149,7 +149,7 @@
                         <div id="tab3" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie" begin="0" end="4">
+                                    <c:forEach items="${movies}" var="movie" begin="10" end="14">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -171,7 +171,7 @@
                         <div id="tab4" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie" begin="5" end="9">
+                                    <c:forEach items="${movies}" var="movie" begin="15" end="19">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
@@ -194,7 +194,7 @@
                 </div>
                 <div class="title-hd">
                     <h2>on tv</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="tvplaylist" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="tabs">
                     <ul class="tab-links-2">
@@ -207,18 +207,18 @@
                         <div id="tab21" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie" begin="5" end="9">
+                                    <c:forEach items="${tvPlays}" var="tvPlay" begin="5" end="9">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="${movie.movieuri}" alt="" width="185" height="284">
+                                                    <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                <div class="hvr-inner">
+                                                <%--<div class="hvr-inner">
                                                     <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                </div>
+                                                </div>--%>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
-                                                    <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,18 +229,18 @@
                         <div id="tab22" class="tab active">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie">
+                                    <c:forEach items="${tvPlays}" var="tvPlay">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="${movie.movieuri}" alt="" width="185" height="284">
+                                                    <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                </div>
+                                                    <%--<div class="hvr-inner">
+                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    </div>--%>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
-                                                    <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,18 +251,18 @@
                         <div id="tab23" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie">
+                                    <c:forEach items="${tvPlays}" var="tvPlay" begin="3" end="7">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="${movie.movieuri}" alt="" width="185" height="284">
+                                                    <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                </div>
+                                                    <%--<div class="hvr-inner">
+                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    </div>--%>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
-                                                    <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -273,18 +273,18 @@
                         <div id="tab24" class="tab">
                             <div class="row">
                                 <div class="slick-multiItem">
-                                    <c:forEach items="${movies}" var="movie" begin="1" end="5">
+                                    <c:forEach items="${tvPlays}" var="tvPlay" begin="1" end="5">
                                         <div class="slide-it">
                                             <div class="movie-item">
                                                 <div class="mv-img">
-                                                    <img src="${movie.movieuri}" alt="" width="185" height="284">
+                                                    <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                </div>
+                                                    <%--<div class="hvr-inner">
+                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    </div>--%>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
-                                                    <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
                                         </div>
