@@ -45,4 +45,6 @@ public interface MovieMapper {
      * @mbggenerated Mon Aug 19 15:44:57 CST 2019
      */
     int updateByPrimaryKey(Movie record);
+
+    List<Movie> searchByLike(String name);
 }

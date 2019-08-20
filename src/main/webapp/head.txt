@@ -109,11 +109,14 @@
 
         <!-- top search form -->
         <div class="top-search">
-            <select>
-                <option value="united">TV show</option>
-                <option value="saab">Others</option>
+            <form action="search" method="post">
+            <select name="show_type">
+                <option>TVPlay</option>
+                <option>Movie</option>
             </select>
-            <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            <input type="text" class="search" name="search" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            <input type="submit" value="搜索"/>
+            </form>
         </div>
     </div>
 </header>

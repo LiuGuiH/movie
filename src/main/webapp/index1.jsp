@@ -73,6 +73,9 @@
                         <div class="mv-img">
                             <a href="#"><img src="${movie.movieuri}" alt="" width="285" height="437"></a>
                         </div>
+                        <div class="hvr-inner">
+                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                        </div>
                         <div class="title-in">
                             <div class="cate">
                                 <span class="blue"><a href="#">${movie.movietype}</a></span>

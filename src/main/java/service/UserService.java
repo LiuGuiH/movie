@@ -12,4 +12,5 @@ public interface UserService {
     List<User> selectAll();
     int updateByPrimaryKey(User record);
     User selectByUsername(String username);
+
 }

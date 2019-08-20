@@ -36,6 +36,23 @@ public class UserController {
         return "index1";
     }
 
+    @RequestMapping("/search")
+    public String search(@RequestParam(value = "search") String search,@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        PageHelper.startPage(pn, 5);
+        String table=request.getParameter("show_type");
+        request.setAttribute("table",table);
+        if ("Movie".equals(table)){
+            List<Movie> movies=movieService.searchByLike(search);
+            PageInfo pageInfoMovies = new PageInfo(movies,3);
+            request.setAttribute("pageInfo", pageInfoMovies);
+        }else if ("TVPlay".equals(table)){
+            List<TVPlay> tvPlays=tvPlayService.searchByLike(search);
+            PageInfo pageInfoTVPlays = new PageInfo(tvPlays,3);
+            request.setAttribute("pageInfo",pageInfoTVPlays);
+        }
+        return "search";
+    }
+
     @RequestMapping("/login")
     public String login(HttpServletRequest request){
         String username=request.getParameter("username");
@@ -46,6 +63,9 @@ public class UserController {
         }
         return "redirect:/";
     }
+
+
+
 
     @RequestMapping("/signup")
     public String signup(User user,HttpServletRequest request){

@@ -83,4 +83,8 @@
     movieOverview, movieReviewId, movieCastCrewId, userId
     from movie
   </select>
+
+  <select id="searchByLike" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select * from movie where movieName like '%${movieName}%'
+  </select>
 </mapper>

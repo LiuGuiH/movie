@@ -10,4 +10,5 @@ public interface TVPlayService {
     TVPlay selectByPrimaryKey(Integer tvid);
     List<TVPlay> selectAll();
     int updateByPrimaryKey(TVPlay record);
+    List<TVPlay> searchByLike(String name);
 }

@@ -37,4 +37,11 @@ public class TVPlayServiceImpl implements TVPlayService {
     public int updateByPrimaryKey(TVPlay record) {
         return tvPlayMapper.updateByPrimaryKey(record);
     }
+
+    @Override
+    public List<TVPlay> searchByLike(String name) {
+        return tvPlayMapper.searchByLike(name);
+    }
+
+
 }

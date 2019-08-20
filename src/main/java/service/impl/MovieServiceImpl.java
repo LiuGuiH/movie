@@ -36,4 +36,9 @@ public class MovieServiceImpl implements MovieService {
     public int updateByPrimaryKey(Movie record) {
         return movieService.updateByPrimaryKey(record);
     }
+
+    @Override
+    public List<Movie> searchByLike(String name) {
+        return movieService.searchByLike(name);
+    }
 }
