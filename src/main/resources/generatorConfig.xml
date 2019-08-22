@@ -46,8 +46,10 @@
     </javaClientGenerator>
 
 	<!-- 指定要逆向分析哪些表：根据表要创建javaBean -->
-    <!--<table tableName="user" domainObjectName="User"></table>-->
-    <!--<table tableName="movie" domainObjectName="Movie"></table>-->
+    <table tableName="user" domainObjectName="User"></table>
+    <table tableName="movie" domainObjectName="Movie"></table>
     <table tableName="TVPlay" domainObjectName="TVPlay"></table>
+    <table tableName="tvplayComment" domainObjectName="TVPlayComment"></table>
+    <table tableName="movieComment" domainObjectName="MovieComment"></table>
   </context>
 </generatorConfiguration>

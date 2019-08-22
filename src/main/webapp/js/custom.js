@@ -452,6 +452,7 @@ $(function(){
 	loginWrap.each( function(){
 		$(this).wrap('<div class="overlay"></div>')
 	});
+
 	//pop up for login form
     loginLink.on('click', function(event){
     	event.preventDefault();

@@ -22,14 +22,13 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
-
+    <link rel="profile" href="">
+    <link rel="stylesheet" href="css/rating_star.css">
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
     <!-- Mobile specific meta -->
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone-no">
-
     <!-- CSS files -->
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="css/style.css">
@@ -57,6 +56,7 @@
 <%@include file="head.txt"%>
 <!-- END | Header -->
 
+
 <div class="hero mv-single-hero">
     <div class="container">
         <div class="row">
@@ -75,7 +75,7 @@
         <div class="row ipad-width2">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="movie-img sticky-sb">
-                    <img src="images/uploads/movie-single.jpg" alt="">
+                    <img src="${movie.movieuri}" alt="">
                     <div class="movie-btn">
                         <div class="btn-transform transform-vertical red">
                             <div><a href="#" class="item item-1 redbtn"> <i class="ion-play"></i> Watch Trailer</a></div>
@@ -90,7 +90,7 @@
             </div>
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="movie-single-ct main-content">
-                    <h1 class="bd-hd">Skyfall: Quantum of Spectre <span>2015</span></h1>
+                    <h1 class="bd-hd">${movie.moviename}</h1>
                     <div class="social-btn">
                         <a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
                         <div class="hover-bnt">
@@ -106,21 +106,19 @@
                     <div class="movie-rate">
                         <div class="rate">
                             <i class="ion-android-star"></i>
-                            <p><span>8.1</span> /10<br>
+                            <p><span>${movie.moviestar}</span> /10<br>
                                 <span class="rv">56 Reviews</span>
                             </p>
                         </div>
+
                         <div class="rate-star">
                             <p>Rate This Movie:  </p>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star"></i>
-                            <i class="ion-ios-star-outline"></i>
+                            <c:forEach begin="1" end="${ms}">
+                                <i class="ion-ios-star"></i>
+                            </c:forEach>
+                            <c:forEach end="${10-ms}" begin="1">
+                                <i class="ion-ios-star-outline"></i>
+                            </c:forEach>
                         </div>
                     </div>
                     <div class="movie-tabs">
@@ -136,7 +134,7 @@
                                 <div id="overview" class="tab active">
                                     <div class="row">
                                         <div class="col-md-8 col-sm-12 col-xs-12">
-                                            <p>Tony Stark creates the Ultron Program to protect the world, but when the peacekeeping program becomes hostile, The Avengers go into action to try and defeat a virtually impossible enemy together. Earth's mightiest heroes must come together once again to protect the world from global extinction.</p>
+                                            <p>${movie.movieoverview}</p>
                                             <div class="title-hd-sm">
                                                 <h4>Videos & Photos</h4>
                                                 <a href="#" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
@@ -253,7 +251,7 @@
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Genres:</h6>
-                                                <p><a href="#">Action, </a> <a href="#"> Sci-Fi,</a> <a href="#">Adventure</a></p>
+                                                <p>${movie.movietype}</p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Release Date:</h6>
@@ -288,9 +286,12 @@
                                         <div class="rv-hd">
                                             <div class="div">
                                                 <h3>Related Movies To</h3>
-                                                <h2>Skyfall: Quantum of Spectre</h2>
+                                                <h2>${movie.moviename}</h2>
                                             </div>
-                                            <a href="#" class="redbtn">Write Review</a>
+                                            <%--<button class="btn btn-primary btn-lg redbtn" data-toggle="modal" data-target="#myModal">Write Review</button>--%>
+                                            <a href="" class="redbtn"  data-toggle="modal" data-target="#myModal">Write Review</a>
+
+
                                         </div>
                                         <div class="topbar-filter">
                                             <p>Found <span>56 reviews</span> in total</p>
@@ -465,7 +466,7 @@
                                 <div id="cast" class="tab">
                                     <div class="row">
                                         <h3>Cast & Crew of</h3>
-                                        <h2>Avengers: Age of Ultron</h2>
+                                        <h2>${movie.moviename}</h2>
                                         <!-- //== -->
                                         <div class="title-hd-sm">
                                             <h4>Directors & Credit Writers</h4>
@@ -658,7 +659,7 @@
                                         <div class="rv-hd">
                                             <div>
                                                 <h3>Videos & Photos of</h3>
-                                                <h2>Skyfall: Quantum of Spectre</h2>
+                                                <h2>${movie.moviename}</h2>
                                             </div>
                                         </div>
                                         <div class="title-hd-sm">
@@ -777,7 +778,7 @@
                                 <div id="moviesrelated" class="tab">
                                     <div class="row">
                                         <h3>Related Movies To</h3>
-                                        <h2>Skyfall: Quantum of Spectre</h2>
+                                        <h2>${movie.moviename}</h2>
                                         <div class="topbar-filter">
                                             <p>Found <span>12 movies</span> in total</p>
                                             <label>Sort by:</label>
@@ -837,7 +838,7 @@
                                         <div class="movie-item-style-2">
                                             <img src="images/uploads/mv5.jpg" alt="">
                                             <div class="mv-item-infor">
-                                                <h6><a href="#">skyfall: evil of boss<span> (2013)  </span></a></h6>
+                                                <h6><a href="#">${movie.moviename}</a></h6>
                                                 <p class="rate"><i class="ion-android-star"></i><span>7.0</span> /10</p>
                                                 <p class="describe">When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.</p>
                                                 <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
@@ -872,9 +873,62 @@
 <%@include file="footer.txt"%>
 <!-- end of footer section-->
 
-<script src="js/jquery.js"></script>
+<%--模态框start--%>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #071829;color: white">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">评论</h4>
+            </div>
+            <div class="modal-body" style="height: 450px">
+                <label>标题：</label>
+                <h5><input type="text" name="title" id="title" /></h5>
+                <p></p>
+                <label>你的评价：</label><p></p>
+                <input name="my_input" value="1" id="rating_simple2" type="hidden" /><p></p>
+                <label>你的看法：</label>
+                <textarea type="text" name="myReview" id="myReview" placeholder="最多为255个字节"  cols="70" rows="10" maxlength="255" style="height: 250px"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #071829">关闭</button>
+                <button type="button" class="btn btn-primary" id="review" style="background-color: #071829">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<%--模态框end--%>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/rating_star.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/plugins2.js"></script>
 <script src="js/custom.js"></script>
+
+<script language="javascript" type="text/javascript">
+
+    $(function () {
+        $("#rating_simple2").webwidget_rating_sex({
+            rating_star_length: '10',
+            rating_initial_value: '1',
+            rating_function_name: '',
+            directory: 'images/'
+        });
+        $("#review").click(function () {
+            var text=document.getElementById("title").value;
+            var star=document.getElementById("my_input").value;
+            var review=document.getElementById("myReview").value;
+            $.ajax({
+                type:"GET",
+                url:"",
+                data:{"text":text,"star":star,"review":review},
+                datatype:"json"
+            })
+        });
+    })
+
+</script>
 </body>
 </html>

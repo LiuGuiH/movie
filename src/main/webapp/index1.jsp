@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -62,25 +62,25 @@
         <div class="row">
             <div class="social-link">
                 <p>Follow us: </p>
-                <a href="#"><i class="ion-social-facebook"></i></a>
-                <a href="#"><i class="ion-social-twitter"></i></a>
-                <a href="#"><i class="ion-social-googleplus"></i></a>
-                <a href="#"><i class="ion-social-youtube"></i></a>
+                <a href=""><i class="ion-social-facebook"></i></a>
+                <a href=""><i class="ion-social-twitter"></i></a>
+                <a href=""><i class="ion-social-googleplus"></i></a>
+                <a href=""><i class="ion-social-youtube"></i></a>
             </div>
             <div  class="slick-multiItemSlider">
                 <c:forEach items="${movies}" var="movie">
                     <div class="movie-item">
                         <div class="mv-img">
-                            <a href="#"><img src="${movie.movieuri}" alt="" width="285" height="437"></a>
+                            <a href=""><img src="${movie.movieuri}" alt="" width="285" height="437"></a>
                         </div>
                         <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                            <a  href="${pageContext.request.contextPath}/moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                         </div>
                         <div class="title-in">
                             <div class="cate">
-                                <span class="blue"><a href="#">${movie.movietype}</a></span>
+                                <span class="blue"><a href="">${movie.movietype}</a></span>
                             </div>
-                            <h6><a href="#">${movie.moviename}</a></h6>
+                            <h6><a href="">${movie.moviename}</a></h6>
                             <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                         </div>
                     </div>
@@ -115,10 +115,10 @@
                                                     <img src="${movie.movieuri}" alt="" width="185" height="284">
                                                 </div>
                                                 <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    <a  href="${pageContext.request.contextPath}/moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                                 </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
+                                                    <h6><a href="">${movie.moviename}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -137,10 +137,10 @@
                                                     <img src="${movie.movieuri}" alt="" width="185" height="284">
                                                 </div>
                                                 <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    <a  href="${pageContext.request.contextPath}/moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                                 </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
+                                                    <h6><a href="">${movie.moviename}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -159,10 +159,10 @@
                                                     <img src="${movie.movieuri}" alt="" width="185" height="284">
                                                 </div>
                                                 <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    <a  href="${pageContext.request.contextPath}/moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                                 </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
+                                                    <h6><a href="">${movie.moviename}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -181,10 +181,10 @@
                                                     <img src="${movie.movieuri}" alt="" width="185" height="284">
                                                 </div>
                                                 <div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                    <a  href="${pageContext.request.contextPath}/moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                                 </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${movie.moviename}</a></h6>
+                                                    <h6><a href="">${movie.moviename}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -216,11 +216,11 @@
                                                 <div class="mv-img">
                                                     <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                <%--<div class="hvr-inner">
-                                                    <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                </div>--%>
+                                                <div class="hvr-inner">
+                                                    <a  href="${pageContext.request.contextPath}/seriessingle?tvid=${tvPlay.tvid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <h6><a href="">${tvPlay.tvname}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -238,11 +238,11 @@
                                                 <div class="mv-img">
                                                     <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                    <%--<div class="hvr-inner">
-                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                    </div>--%>
+                                                <div class="hvr-inner">
+                                                    <a  href="${pageContext.request.contextPath}/seriessingle?tvid=${tvPlay.tvid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <h6><a href="">${tvPlay.tvname}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -260,11 +260,11 @@
                                                 <div class="mv-img">
                                                     <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                    <%--<div class="hvr-inner">
-                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                    </div>--%>
+                                                <div class="hvr-inner">
+                                                    <a  href="${pageContext.request.contextPath}/seriessingle?tvid=${tvPlay.tvid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <h6><a href="">${tvPlay.tvname}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -282,11 +282,11 @@
                                                 <div class="mv-img">
                                                     <img src="${tvPlay.tvuri}" alt="" width="185" height="284">
                                                 </div>
-                                                    <%--<div class="hvr-inner">
-                                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                                                    </div>--%>
+                                                <div class="hvr-inner">
+                                                    <a  href="${pageContext.request.contextPath}/seriessingle?tvid=${tvPlay.tvid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                                </div>
                                                 <div class="title-in">
-                                                    <h6><a href="#">${tvPlay.tvname}</a></h6>
+                                                    <h6><a href="">${tvPlay.tvname}</a></h6>
                                                     <p><i class="ion-android-star"></i><span>${tvPlay.tvstar}</span> /10</p>
                                                 </div>
                                             </div>
@@ -306,34 +306,34 @@
                     <div class="celebrities">
                         <h4 class="sb-title">Spotlight Celebrities</h4>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava1.jpg" alt="" width="70" height="70"></a>
+                            <a href=""><img src="images/uploads/ava1.jpg" alt="" width="70" height="70"></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Samuel N. Jack</a></h6>
+                                <h6><a href="">Samuel N. Jack</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava2.jpg" alt="" width="70" height="70"></a>
+                            <a href=""><img src="images/uploads/ava2.jpg" alt="" width="70" height="70"></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Benjamin Carroll</a></h6>
+                                <h6><a href="">Benjamin Carroll</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava3.jpg" alt="" width="70" height="70"></a>
+                            <a href=""><img src="images/uploads/ava3.jpg" alt="" width="70" height="70"></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Beverly Griffin</a></h6>
+                                <h6><a href="">Beverly Griffin</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
+                            <a href=""><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Justin Weaver</a></h6>
+                                <h6><a href="">Justin Weaver</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
-                        <a href="#" class="btn">See all celebrities<i class="ion-ios-arrow-right"></i></a>
+                        <a href="" class="btn">See all celebrities<i class="ion-ios-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -347,7 +347,7 @@
             <div class="col-md-12">
                 <div class="title-hd">
                     <h2>in theater</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="videos">
                     <div class="slider-for-2 video-ft">
@@ -457,7 +457,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it1.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Brie Larson to play first female white house candidate Victoria Woodull in Amazon film</a></h3>
+                                        <h3><a href="">Brie Larson to play first female white house candidate Victoria Woodull in Amazon film</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -469,7 +469,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it2.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Tab 2</a></h3>
+                                        <h3><a href="">Tab 2</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -481,7 +481,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it1.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Tab 3</a></h3>
+                                        <h3><a href="">Tab 3</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -493,27 +493,27 @@
                 <div class="morenew">
                     <div class="title-hd">
                         <h3>More news on Blockbuster</h3>
-                        <a href="#" class="viewall">See all Movies news<i class="ion-ios-arrow-right"></i></a>
+                        <a href="" class="viewall">See all Movies news<i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="more-items">
                         <div class="left">
                             <div class="more-it">
-                                <h6><a href="#">Michael Shannon Frontrunner to play Cable in “Deadpool 2”</a></h6>
+                                <h6><a href="">Michael Shannon Frontrunner to play Cable in “Deadpool 2”</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                             <div class="more-it">
-                                <h6><a href="#">French cannibal horror “Raw” inspires L.A. theater to hand out “Barf Bags”</a></h6>
+                                <h6><a href="">French cannibal horror “Raw” inspires L.A. theater to hand out “Barf Bags”</a></h6>
 
                                 <span class="time">13 hours ago</span>
                             </div>
                         </div>
                         <div class="right">
                             <div class="more-it">
-                                <h6><a href="#">Laura Dern in talks to join Justin Kelly’s biopic “JT Leroy”</a></h6>
+                                <h6><a href="">Laura Dern in talks to join Justin Kelly’s biopic “JT Leroy”</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                             <div class="more-it">
-                                <h6><a href="#">China punishes more than 300 cinemas for box office cheating</a></h6>
+                                <h6><a href="">China punishes more than 300 cinemas for box office cheating</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                         </div>
