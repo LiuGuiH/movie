@@ -12,4 +12,5 @@ public interface MovieService {
     int updateByPrimaryKey(Movie record);
     List<Movie> searchByLike(String name);
     List<Movie> searchByTypeLike(String type);
+    List<Movie> searchByOrder();
 }

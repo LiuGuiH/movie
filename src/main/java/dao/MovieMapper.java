@@ -49,4 +49,6 @@ public interface MovieMapper {
     List<Movie> searchByLike(String name);
 
     List<Movie> searchByTypeLike(String type);
+
+    List<Movie> searchByOrder();
 }

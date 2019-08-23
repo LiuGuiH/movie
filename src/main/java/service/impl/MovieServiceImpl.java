@@ -46,4 +46,9 @@ public class MovieServiceImpl implements MovieService {
     public List<Movie> searchByTypeLike(String type) {
         return movieService.searchByTypeLike(type);
     }
+
+    @Override
+    public List<Movie> searchByOrder() {
+        return movieService.searchByOrder();
+    }
 }

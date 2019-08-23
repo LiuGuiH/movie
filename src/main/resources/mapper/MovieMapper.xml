@@ -90,4 +90,8 @@
   <select id="searchByTypeLike" parameterType="java.lang.String" resultMap="BaseResultMap">
     select * from movie where movieType like '%${movieType}%'
   </select>
+  <select id="searchByOrder" resultMap="BaseResultMap">
+    select * from movie order by movieStar desc limit 0,10
+  </select>
+
 </mapper>

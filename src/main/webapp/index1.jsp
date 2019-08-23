@@ -300,40 +300,17 @@
             </div>
             <div class="col-md-4">
                 <div class="sidebar">
-                    <div class="ads">
-                        <img src="images/uploads/ads1.png" alt="" width="336" height="296">
-                    </div>
                     <div class="celebrities">
-                        <h4 class="sb-title">Spotlight Celebrities</h4>
-                        <div class="celeb-item">
-                            <a href=""><img src="images/uploads/ava1.jpg" alt="" width="70" height="70"></a>
-                            <div class="celeb-author">
-                                <h6><a href="">Samuel N. Jack</a></h6>
-                                <span>Actor</span>
+                        <h4 class="sb-title">高分电影排行</h4>
+                        <c:forEach items="${orders}" var="order">
+                            <div class="celeb-item">
+                                <a href=""><img src="${order.movieuri}" alt="" width="70" height="70"></a>
+                                <div class="celeb-author">
+                                    <h6><a href="${pageContext.request.contextPath}/moviesingle?movieid=${order.movieid}">${order.moviename}</a></h6>
+                                    <span>${order.movietype}</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="celeb-item">
-                            <a href=""><img src="images/uploads/ava2.jpg" alt="" width="70" height="70"></a>
-                            <div class="celeb-author">
-                                <h6><a href="">Benjamin Carroll</a></h6>
-                                <span>Actor</span>
-                            </div>
-                        </div>
-                        <div class="celeb-item">
-                            <a href=""><img src="images/uploads/ava3.jpg" alt="" width="70" height="70"></a>
-                            <div class="celeb-author">
-                                <h6><a href="">Beverly Griffin</a></h6>
-                                <span>Actor</span>
-                            </div>
-                        </div>
-                        <div class="celeb-item">
-                            <a href=""><img src="images/uploads/ava4.jpg" alt="" width="70" height="70"></a>
-                            <div class="celeb-author">
-                                <h6><a href="">Justin Weaver</a></h6>
-                                <span>Actor</span>
-                            </div>
-                        </div>
-                        <a href="" class="btn">See all celebrities<i class="ion-ios-arrow-right"></i></a>
+                        </c:forEach>
                     </div>
                 </div>
             </div>
@@ -346,31 +323,14 @@
         <div class="row ipad-width">
             <div class="col-md-12">
                 <div class="title-hd">
-                    <h2>in theater</h2>
+                    <h2>Advertisement</h2>
                     <a href="" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="videos">
                     <div class="slider-for-2 video-ft">
                         <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/1Q8fG0TtVAY"></iframe>
+                            <img src="images/uploads/ads1.png" style="width: 800px;height: 430px">
                         </div>
-                        <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/w0qQkSuWOS8"></iframe>
-                        </div>
-                        <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/44LdLqgOpjo"></iframe>
-                        </div>
-                        <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/gbug3zTm3Ws"></iframe>
-                        </div>
-                        <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/e3Nl_TCQXuw"></iframe>
-                        </div>
-                        <div>
-                            <iframe class="item-video" src="" data-src="https://www.youtube.com/embed/NxhEZG0k9_w"></iframe>
-                        </div>
-
-
                     </div>
                     <div class="slider-nav-2 thumb-ft">
                         <div class="item">

@@ -88,6 +88,7 @@
                             community <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-menu level1">
+                            <li><a href="userdetails.jsp">Account Details</a></li>
                             <li><a href="userfavoritegrid.jsp">user favorite grid</a></li>
                             <li><a href="userfavoritelist.jsp">user favorite list</a></li>
                             <li><a href="userprofile.jsp">user profile</a></li>

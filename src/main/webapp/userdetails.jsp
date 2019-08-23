@@ -82,73 +82,47 @@
                     </div>
                     <div class="user-fav">
                         <ul>
-                            <li><a href="userdetails.jsp">Account Details</a></li>
-                            <li  class="active"><a href="userprofile.jsp">Profile</a></li>
+                            <li  class="active"><a href="userdetails.jsp">Account Details</a></li>
+                            <li><a href="userprofile.jsp">Profile</a></li>
                             <li><a href="userfavoritelist.jsp">Favorite movies</a></li>
                             <li><a href="userrate.jsp">Rated movies</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="form-style-1 user-pro" action="">
                     <form action="" class="user">
-                        <h4>01. Profile details</h4>
+                        <h4>Account details</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Username</label>
-                                <input type="text" placeholder="edwardkennedy">
+                                <input type="text" placeholder="edwardkennedy" readonly="readonly">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Email Address</label>
-                                <input type="text" placeholder="edward@kennedy.com">
+                                <input type="text" placeholder="edward@kennedy.com" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>First Name</label>
-                                <input type="text" placeholder="Edward ">
+                                <input type="text" placeholder="Edward " readonly="readonly">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Last Name</label>
-                                <input type="text" placeholder="Kennedy">
+                                <input type="text" placeholder="Kennedy" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Address</label>
-                                <input type="text" placeholder="Address">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input class="submit" type="submit" value="save">
-                            </div>
-                        </div>
-                    </form>
-                    <form action="" class="password">
-                        <h4>02. Change password</h4>
-                        <div class="row">
-                            <div class="col-md-6 form-it">
-                                <label>Old Password</label>
-                                <input type="text" placeholder="**********">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-it">
-                                <label>New Password</label>
-                                <input type="text" placeholder="***************">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-it">
-                                <label>Confirm New Password</label>
-                                <input type="text" placeholder="*************** ">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <input class="submit" type="submit" value="change">
+                                <input type="text" placeholder="Address" readonly="readonly">
                             </div>
                         </div>
                     </form>

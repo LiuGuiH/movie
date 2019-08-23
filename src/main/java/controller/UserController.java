@@ -40,6 +40,8 @@ public class UserController {
         request.getSession().setAttribute("movies",movieList);
         List<TVPlay> tvPlays=tvPlayService.selectAll();
         request.getSession().setAttribute("tvPlays",tvPlays);
+        List<Movie> orders=movieService.searchByOrder();
+        request.getSession().setAttribute("orders",orders);
         return "index1";
     }
 
@@ -204,4 +206,6 @@ public class UserController {
         return "type";
 
     }
+
+
 }

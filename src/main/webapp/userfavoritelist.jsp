@@ -79,21 +79,13 @@
                 <div class="user-information">
                     <div class="user-img">
                         <a href=""><img src="images/uploads/user-img.png" alt=""><br></a>
-                        <a href="" class="redbtn">Change avatar</a>
                     </div>
                     <div class="user-fav">
-                        <p>Account Details</p>
                         <ul>
+                            <li><a href="userdetails.jsp">Account Details</a></li>
                             <li><a href="userprofile.jsp">Profile</a></li>
-                            <li class="active"><a href="userfavoritelist.jsp">Favorite movies</a></li>
+                            <li  class="active"><a href="userfavoritelist.jsp">Favorite movies</a></li>
                             <li><a href="userrate.jsp">Rated movies</a></li>
-                        </ul>
-                    </div>
-                    <div class="user-fav">
-                        <p>Others</p>
-                        <ul>
-                            <li><a href="">Change password</a></li>
-                            <li><a href="">Log out</a></li>
                         </ul>
                     </div>
                 </div>
