@@ -37,4 +37,9 @@ public class TVPlayCommentServiceImpl implements TVPlayCommentService {
     public int updateByPrimaryKey(TVPlayComment record) {
         return 0;
     }
+
+    @Override
+    public List<TVPlayComment> selectAllByTVId(Integer typlayid) {
+        return tvPlayCommentMapper.selectAllByTVId(typlayid);
+    }
 }

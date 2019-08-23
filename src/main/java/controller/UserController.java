@@ -5,19 +5,20 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import pojo.Movie;
-import pojo.TVPlay;
-import pojo.User;
-import service.MovieService;
-import service.TVPlayService;
-import service.UserService;
+import org.springframework.web.bind.annotation.ResponseBody;
+import pojo.*;
+import service.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 
 @Controller
@@ -28,6 +29,10 @@ public class UserController {
     private MovieService movieService;
     @Autowired
     private TVPlayService tvPlayService;
+    @Autowired
+    private MovieCommentService movieCommentService;
+    @Autowired
+    private TVPlayCommentService tvPlayCommentService;
 
     @RequestMapping("/")
     public String main(HttpServletRequest request){
@@ -130,9 +135,15 @@ public class UserController {
     public String moviesingle(HttpServletRequest request){
         String movieid1=request.getParameter("movieid");
         Integer movieid=Integer.parseInt(movieid1);
-        //System.out.println(movieid);
         Movie movie=movieService.selectByPrimaryKey(movieid);
         int ms= (int) Math.round(movie.getMoviestar());
+        List<MovieComment> movieComments=movieCommentService.selectAllByMovieId(movieid);
+        List<String> usernames=new ArrayList<>();
+        for (MovieComment movieComment:movieComments){
+            usernames.add(userService.selectByPrimaryKey(movieComment.getUserid()).getUsername());
+        }
+        request.getSession().setAttribute("usernames",usernames);
+        request.getSession().setAttribute("movieComments",movieComments);
         request.getSession().setAttribute("ms",ms);
         request.getSession().setAttribute("movie",movie);
         return "moviesingle";
@@ -144,13 +155,53 @@ public class UserController {
         Integer tvid=Integer.parseInt(tvid1);
         TVPlay tvPlay=tvPlayService.selectByPrimaryKey(tvid);
         int ts= (int) Math.round(tvPlay.getTvstar());
+        List<TVPlayComment> tvPlayComments=tvPlayCommentService.selectAllByTVId(tvid);
+        List<String> usernames=new ArrayList<>();
+        for (TVPlayComment tvPlayComment:tvPlayComments){
+            usernames.add(userService.selectByPrimaryKey(tvPlayComment.getUserid()).getUsername());
+        }
+        request.getSession().setAttribute("usernames",usernames);
+        request.getSession().setAttribute("tvPlayComments",tvPlayComments);
         request.getSession().setAttribute("ts",ts);
         request.getSession().setAttribute("tvPlay",tvPlay);
         return "seriessingle";
     }
 
+
     @RequestMapping("/movieComment")
-    public String movieComment(){
-        return null;
+    @ResponseBody
+    public MovieComment movieComment(@RequestParam String title, @RequestParam Integer star0, @RequestParam String content, @RequestParam Integer userid, @RequestParam Integer movieid, HttpServletResponse response,HttpServletRequest request) throws IOException {
+        Date date=new Date();
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String time=sdf.format(date);
+        MovieComment movieComment=new MovieComment(userid,movieid,time,star0,title,content);
+        movieCommentService.insert(movieComment);
+        request.getSession().setAttribute("commentUsername",userService.selectByPrimaryKey(userid).getUsername());
+        return movieComment;
+    }
+
+    @RequestMapping("/tvplayComment")
+    @ResponseBody
+    public TVPlayComment tvplayComment(@RequestParam String title, @RequestParam Integer star, @RequestParam String content, @RequestParam Integer userid, @RequestParam Integer tvid, HttpServletResponse response,HttpServletRequest request) throws IOException {
+        Date date=new Date();
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String time=sdf.format(date);
+        TVPlayComment tvPlayComment=new TVPlayComment(userid,tvid,time,star,title,content);
+        tvPlayCommentService.insert(tvPlayComment);
+        request.getSession().setAttribute("commentUsername",userService.selectByPrimaryKey(userid).getUsername());
+        return tvPlayComment;
+    }
+
+    @RequestMapping("/typeList")
+    public String type(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn,@RequestParam String type,HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        //将用户信息放入PageInfo对象里
+        List<Movie> movieLists=movieService.searchByTypeLike(type);
+        PageInfo pageInfo = new PageInfo(movieLists,3);
+        request.setAttribute("typePageInfo", pageInfo);
+        request.setAttribute("typeName", type);
+        return "type";
+
     }
 }

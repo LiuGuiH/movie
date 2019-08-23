@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,7 +64,7 @@
                 <div class="hero-ct">
                     <h1>Edward kennedy’s profile</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span>Rated movies</li>
                     </ul>
                 </div>
@@ -78,22 +78,22 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="user-information">
                     <div class="user-img">
-                        <a href="#"><img src="images/uploads/user-img.png" alt=""><br></a>
-                        <a href="#" class="redbtn">Change avatar</a>
+                        <a href=""><img src="images/uploads/user-img.png" alt=""><br></a>
+                        <a href="" class="redbtn">Change avatar</a>
                     </div>
                     <div class="user-fav">
                         <p>Account Details</p>
                         <ul>
-                            <li><a href="#">Profile</a></li>
-                            <li><a href="#">Favorite movies</a></li>
-                            <li class="active"><a href="#">Rated movies</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Favorite movies</a></li>
+                            <li class="active"><a href="">Rated movies</a></li>
                         </ul>
                     </div>
                     <div class="user-fav">
                         <p>Others</p>
                         <ul>
-                            <li><a href="#">Change password</a></li>
-                            <li><a href="#">Log out</a></li>
+                            <li><a href="">Change password</a></li>
+                            <li><a href="">Log out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                 <div class="movie-item-style-2 userrate">
                     <img src="images/uploads/mv1.jpg" alt="">
                     <div class="mv-item-infor">
-                        <h6><a href="#">oblivion <span>(2012)</span></a></h6>
+                        <h6><a href="">oblivion <span>(2012)</span></a></h6>
                         <p class="time sm-text">your rate:</p>
                         <p class="rate"><i class="ion-android-star"></i><span>9.0</span> /10</p>
                         <p class="time sm-text">your reviews:</p>
@@ -122,7 +122,7 @@
                 <div class="movie-item-style-2 userrate">
                     <img src="images/uploads/mv2.jpg" alt="">
                     <div class="mv-item-infor">
-                        <h6><a href="#">into the wild <span>(2014)</span></a></h6>
+                        <h6><a href="">into the wild <span>(2014)</span></a></h6>
                         <p class="time sm-text">your rate:</p>
                         <p class="rate"><i class="ion-android-star"></i><span>7.0</span> /10</p>
                     </div>
@@ -130,7 +130,7 @@
                 <div class="movie-item-style-2 userrate last">
                     <img src="images/uploads/mv3.jpg" alt="">
                     <div class="mv-item-infor">
-                        <h6><a href="#">blade runner<span>(2015)</span></a></h6>
+                        <h6><a href="">blade runner<span>(2015)</span></a></h6>
                         <p class="time sm-text">your rate:</p>
                         <p class="rate"><i class="ion-android-star"></i><span>10.0</span> /10</p>
                         <p class="time sm-text">your reviews:</p>
@@ -147,8 +147,8 @@
                     </select>
                     <div class="pagination2">
                         <span>Page 1 of 1:</span>
-                        <a class="active" href="#">1</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                        <a class="active" href="">1</a>
+                        <a href=""><i class="ion-arrow-right-b"></i></a>
                     </div>
                 </div>
             </div>

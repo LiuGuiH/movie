@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,20 +64,20 @@
                 <div class="movie-item">
                     <div class="title-in">
                         <div class="cate">
-                            <span class="yell"><a href="#">Action</a></span>
-                            <span class="orange"><a href="#">advanture</a></span>
+                            <span class="yell"><a href="">Action</a></span>
+                            <span class="orange"><a href="">advanture</a></span>
                         </div>
-                        <h1><a href="#">Guns of the Navarone <span>2013</span></a></h1>
+                        <h1><a href="">Guns of the Navarone <span>2013</span></a></h1>
                         <div class="social-btn">
-                            <a href="#" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
-                            <a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+                            <a href="" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
+                            <a href="" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
                             <div class="hover-bnt">
-                                <a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
+                                <a href="" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
                                 <div class="hvr-item">
-                                    <a href="#" class="hvr-grow"><i class="ion-social-facebook"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-twitter"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-googleplus"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-youtube"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-facebook"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-twitter"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-googleplus"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -94,20 +94,20 @@
                 <div class="movie-item">
                     <div class="title-in">
                         <div class="cate">
-                            <span class="yell"><a href="#">Action</a></span>
-                            <span class="orange"><a href="#">advanture</a></span>
+                            <span class="yell"><a href="">Action</a></span>
+                            <span class="orange"><a href="">advanture</a></span>
                         </div>
-                        <h1><a href="#">Guns of the Navarone <span>2013</span></a></h1>
+                        <h1><a href="">Guns of the Navarone <span>2013</span></a></h1>
                         <div class="social-btn">
-                            <a href="#" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
-                            <a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+                            <a href="" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
+                            <a href="" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
                             <div class="hover-bnt">
-                                <a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
+                                <a href="" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
                                 <div class="hvr-item">
-                                    <a href="#" class="hvr-grow"><i class="ion-social-facebook"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-twitter"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-googleplus"></i></a>
-                                    <a href="#" class="hvr-grow"><i class="ion-social-youtube"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-facebook"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-twitter"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-googleplus"></i></a>
+                                    <a href="" class="hvr-grow"><i class="ion-social-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
             <div class="col-md-8">
                 <div class="title-hd">
                     <h2>in theater</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="tabs">
                     <ul class="tab-links">
@@ -154,7 +154,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -168,7 +168,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -182,7 +182,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -196,7 +196,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -210,7 +210,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -224,7 +224,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -238,7 +238,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -286,7 +286,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -300,7 +300,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -314,7 +314,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -328,7 +328,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -342,7 +342,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -362,7 +362,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -376,7 +376,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -390,7 +390,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -404,7 +404,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -418,7 +418,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -438,7 +438,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -452,7 +452,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -466,7 +466,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -480,7 +480,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -494,7 +494,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -506,7 +506,7 @@
                 </div>
                 <div class="title-hd">
                     <h2>on tv</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="tabs">
                     <ul class="tab-links-2">
@@ -528,7 +528,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -542,7 +542,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -556,7 +556,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -570,7 +570,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -584,7 +584,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -604,7 +604,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -618,7 +618,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -632,7 +632,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -646,7 +646,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -660,7 +660,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -674,7 +674,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -688,7 +688,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -702,7 +702,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href=>The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -730,7 +730,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -750,7 +750,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -764,7 +764,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -778,7 +778,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -792,7 +792,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -806,7 +806,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -820,7 +820,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -834,7 +834,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -848,7 +848,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -862,7 +862,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -882,7 +882,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Interstellar</a></h6>
+                                                <h6><a href="">Interstellar</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -896,7 +896,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The revenant</a></h6>
+                                                <h6><a href="">The revenant</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -910,7 +910,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -924,7 +924,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">The walk</a></h6>
+                                                <h6><a href="">The walk</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -938,7 +938,7 @@
                                                 <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                             </div>
                                             <div class="title-in">
-                                                <h6><a href="#">Die hard</a></h6>
+                                                <h6><a href="">Die hard</a></h6>
                                                 <p><i class="ion-android-star"></i><span>7.4</span> /10</p>
                                             </div>
                                         </div>
@@ -957,34 +957,34 @@
                     <div class="celebrities">
                         <h4 class="sb-title">Spotlight Celebrities</h4>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava1.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava1.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Samuel N. Jack</a></h6>
+                                <h6><a href="">Samuel N. Jack</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava2.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava2.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Benjamin Carroll</a></h6>
+                                <h6><a href="">Benjamin Carroll</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava3.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava3.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Beverly Griffin</a></h6>
+                                <h6><a href="">Beverly Griffin</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava4.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava4.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Justin Weaver</a></h6>
+                                <h6><a href="">Justin Weaver</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
-                        <a href="#" class="btn">See all celebrities<i class="ion-ios-arrow-right"></i></a>
+                        <a href="" class="btn">See all celebrities<i class="ion-ios-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -998,7 +998,7 @@
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="title-hd">
                     <h2>in theater</h2>
-                    <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
+                    <a href="" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
                 </div>
                 <div class="video-style-2">
                     <div class="slider-for">
@@ -1085,30 +1085,30 @@
                     <div class="celebrities">
                         <h4 class="sb-title">Spotlight Celebrities</h4>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava1.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava1.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Samuel N. Jack</a></h6>
+                                <h6><a href="">Samuel N. Jack</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava2.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava2.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Benjamin Carroll</a></h6>
+                                <h6><a href="">Benjamin Carroll</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava3.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava3.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Beverly Griffin</a></h6>
+                                <h6><a href="">Beverly Griffin</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava4.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava4.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Justin Weaver</a></h6>
+                                <h6><a href="">Justin Weaver</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
@@ -1141,7 +1141,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it1.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Brie Larson to play first female white house candidate Victoria Woodull in Amazon film</a></h3>
+                                        <h3><a href="">Brie Larson to play first female white house candidate Victoria Woodull in Amazon film</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -1153,7 +1153,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it2.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Tab 2</a></h3>
+                                        <h3><a href="">Tab 2</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -1165,7 +1165,7 @@
                                 <div class="blog-item-style-1">
                                     <img src="images/uploads/blog-it1.jpg" alt="" width="170" height="250">
                                     <div class="blog-it-infor">
-                                        <h3><a href="#">Tab 3</a></h3>
+                                        <h3><a href="">Tab 3</a></h3>
                                         <span class="time">13 hours ago</span>
                                         <p>Exclusive: <span>Amazon Studios </span>has acquired Victoria Woodhull, with Oscar winning Room star <span>Brie Larson</span> polsed to produce, and play the first female candidate for the presidency of the United States. Amazon bought it in a pitch package deal. <span> Ben Kopit</span>, who wrote the Warner Bros film <span>Libertine</span> that has...</p>
                                     </div>
@@ -1177,27 +1177,27 @@
                 <div class="morenew">
                     <div class="title-hd">
                         <h3>More news on Blockbuster</h3>
-                        <a href="#" class="viewall">See all Movies news<i class="ion-ios-arrow-right"></i></a>
+                        <a href="" class="viewall">See all Movies news<i class="ion-ios-arrow-right"></i></a>
                     </div>
                     <div class="more-items">
                         <div class="left">
                             <div class="more-it">
-                                <h6><a href="#">Michael Shannon Frontrunner to play Cable in “Deadpool 2”</a></h6>
+                                <h6><a href="">Michael Shannon Frontrunner to play Cable in “Deadpool 2”</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                             <div class="more-it">
-                                <h6><a href="#">French cannibal horror “Raw” inspires L.A. theater to hand out “Barf Bags”</a></h6>
+                                <h6><a href="">French cannibal horror “Raw” inspires L.A. theater to hand out “Barf Bags”</a></h6>
 
                                 <span class="time">13 hours ago</span>
                             </div>
                         </div>
                         <div class="right">
                             <div class="more-it">
-                                <h6><a href="#">Laura Dern in talks to join Justin Kelly’s biopic “JT Leroy”</a></h6>
+                                <h6><a href="">Laura Dern in talks to join Justin Kelly’s biopic “JT Leroy”</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                             <div class="more-it">
-                                <h6><a href="#">China punishes more than 300 cinemas for box office cheating</a></h6>
+                                <h6><a href="">China punishes more than 300 cinemas for box office cheating</a></h6>
                                 <span class="time">13 hours ago</span>
                             </div>
                         </div>

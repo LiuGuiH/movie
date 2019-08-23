@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,7 +64,7 @@
                 <div class="hero-ct">
                     <h1>Movie Listing - Grid Fullwidth</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
                     </ul>
                 </div>
@@ -99,7 +99,7 @@
                                         <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                     </div>
                                     <div class="mv-item-infor">
-                                        <h6><a href="#">${movie.moviename}</a></h6>
+                                        <h6><a href="">${movie.moviename}</a></h6>
                                         <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@
 
                             <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
                                 <c:if test="${page_Num == pageInfo.pageNum }">
-                                    <li class="active"><a href="#" rel="external nofollow" >${ page_Num}</a></li>
+                                    <li class="active"><a href="" rel="external nofollow" >${ page_Num}</a></li>
                                 </c:if>
                                 <c:if test="${page_Num != pageInfo.pageNum }">
                                     <li><a href="moviegridfw?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>

@@ -47,4 +47,6 @@ public interface MovieMapper {
     int updateByPrimaryKey(Movie record);
 
     List<Movie> searchByLike(String name);
+
+    List<Movie> searchByTypeLike(String type);
 }

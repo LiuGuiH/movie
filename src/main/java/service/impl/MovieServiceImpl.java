@@ -41,4 +41,9 @@ public class MovieServiceImpl implements MovieService {
     public List<Movie> searchByLike(String name) {
         return movieService.searchByLike(name);
     }
+
+    @Override
+    public List<Movie> searchByTypeLike(String type) {
+        return movieService.searchByTypeLike(type);
+    }
 }

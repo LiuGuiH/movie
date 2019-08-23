@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <div class="login-wrapper"  id="signup-content">
     <div class="login-content">
-        <a href="#" class="close">x</a>
+        <a href="" class="close">x</a>
         <h3>sign up</h3>
         <form method="post" action="signup">
             <div class="row">

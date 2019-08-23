@@ -37,7 +37,7 @@
                         </a>
                         <ul class="dropdown-menu level1">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" >Movie grid<i class="ion-ios-arrow-forward"></i></a>
                                 <ul class="dropdown-menu level2">
                                     <li><a href="moviegrid">Movie grid</a></li>
                                     <li><a href="moviegridfw">movie grid full width</a></li>
@@ -46,6 +46,20 @@
                             <li><a href="movielist">Movie list</a></li>
                             <li><a href="moviesingle.jsp">Movie single</a></li>
                             <li class="it-last"><a href="seriessingle.jsp">Series single</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown first">
+                        <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                            Type <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu level1">
+                            <li><a href="typeList?type=剧情">剧情</a></li>
+                            <li><a href="typeList?type=动画">动画</a></li>
+                            <li><a href="typeList?type=奇幻">奇幻</a></li>
+                            <li><a href="typeList?type=犯罪">犯罪</a></li>
+                            <li><a href="typeList?type=动作">动作</a></li>
+                            <li><a href="typeList?type=爱情">爱情</a></li>
+                            <li><a href="typeList?type=惊悚">惊悚</a></li>
                         </ul>
                     </li>
                     <li class="dropdown first">
@@ -92,7 +106,7 @@
                             <li class="it-last"><a href="comingsoon.jsp">Coming soon</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="">Help</a></li>
                     <c:if test="${user!=null}">
                         <li><a>欢迎您：${user.username}</a></li>
                         <li><a href="logout">退出登录</a></li>

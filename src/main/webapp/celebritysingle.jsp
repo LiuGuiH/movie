@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -63,7 +63,7 @@
             <div class="col-md-12">
                 <!-- <h1> movie listing - list</h1>
                 <ul class="breadcumb">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="">Home</a></li>
                     <li> <span class="ion-ios-arrow-right"></span> movie listing</li>
                 </ul> -->
             </div>
@@ -85,18 +85,18 @@
                     <h1 class="bd-hd">Hugh Jackman</h1>
                     <p class="ceb-single">Actor  |  Producer</p>
                     <div class="social-link cebsingle-socail">
-                        <a href="#"><i class="ion-social-facebook"></i></a>
-                        <a href="#"><i class="ion-social-twitter"></i></a>
-                        <a href="#"><i class="ion-social-googleplus"></i></a>
-                        <a href="#"><i class="ion-social-linkedin"></i></a>
+                        <a href=""><i class="ion-social-facebook"></i></a>
+                        <a href=""><i class="ion-social-twitter"></i></a>
+                        <a href=""><i class="ion-social-googleplus"></i></a>
+                        <a href=""><i class="ion-social-linkedin"></i></a>
                     </div>
                     <div class="movie-tabs">
                         <div class="tabs">
                             <ul class="tab-links tabs-mv">
-                                <li class="active"><a href="#overviewceb">Overview</a></li>
-                                <li><a href="#biography"> biography</a></li>
-                                <li><a href="#mediaceb"> Media</a></li>
-                                <li><a href="#filmography">filmography</a></li>
+                                <li class="active"><a href="overviewceb">Overview</a></li>
+                                <li><a href="biography"> biography</a></li>
+                                <li><a href="mediaceb"> Media</a></li>
+                                <li><a href="filmography">filmography</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div id="overviewceb" class="tab active">
@@ -106,10 +106,10 @@
                                                 accountant. He is the youngest of five children. His parents both English, moved to Australia shortly before his birth.
                                                 He also has Greek (from a great-grandfather) and Scottish (from a grandmother) ancestry.</p>
                                             <p>Hugh Michael Jackman is an Australian actor, singer, multi-instrumentalist, dancer and producer. Jackman has won international recognition for his roles in major films, notably as superhero, period, and romance characters. </p>
-                                            <p class="time"><a href="#">See full bio <i class="ion-ios-arrow-right"></i></a></p>
+                                            <p class="time"><a href="">See full bio <i class="ion-ios-arrow-right"></i></a></p>
                                             <div class="title-hd-sm">
                                                 <h4>Videos & Photos</h4>
-                                                <a href="#" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
+                                                <a href="" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
                                             </div>
                                             <div class="mvsingle-item ov-item">
                                                 <a class="img-lightbox"  data-fancybox-group="gallery" href="images/uploads/image11.jpg" ><img src="images/uploads/image1.jpg" alt=""></a>
@@ -122,7 +122,7 @@
                                             </div>
                                             <div class="title-hd-sm">
                                                 <h4>filmography</h4>
-                                                <a href="#" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
+                                                <a href="" class="time">Full Filmography<i class="ion-ios-arrow-right"></i></a>
                                             </div>
                                             <!-- movie cast -->
                                             <div class="mvcast-item">
@@ -130,7 +130,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film1.jpg" alt="">
                                                         <div>
-                                                            <a href="#">X-Men: Apocalypse </a>
+                                                            <a href="">X-Men: Apocalypse </a>
                                                             <p class="time">Logan</p>
                                                         </div>
 
@@ -141,7 +141,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film2.jpg" alt="">
                                                         <div>
-                                                            <a href="#">Eddie the Eagle </a>
+                                                            <a href="">Eddie the Eagle </a>
                                                             <p class="time">Bronson Peary</p>
                                                         </div>
                                                     </div>
@@ -151,7 +151,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film3.jpg" alt="">
                                                         <div>
-                                                            <a href="#">Me and Earl and the Dying Girl </a>
+                                                            <a href="">Me and Earl and the Dying Girl </a>
                                                             <p class="time">Hugh Jackman</p>
                                                         </div>
                                                     </div>
@@ -161,7 +161,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film4.jpg" alt="">
                                                         <div>
-                                                            <a href="#">Night at the Museum 3 </a>
+                                                            <a href="">Night at the Museum 3 </a>
                                                             <p class="time">Blackbeard</p>
                                                         </div>
                                                     </div>
@@ -171,7 +171,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film5.jpg" alt="">
                                                         <div>
-                                                            <a href="#">X-Men: Days of Future Past </a>
+                                                            <a href="">X-Men: Days of Future Past </a>
                                                             <p class="time">Wolverine</p>
                                                         </div>
                                                     </div>
@@ -181,7 +181,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film6.jpg" alt="">
                                                         <div>
-                                                            <a href="#">The Wolverine </a>
+                                                            <a href="">The Wolverine </a>
                                                             <p class="time">Logan</p>
                                                         </div>
                                                     </div>
@@ -191,7 +191,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film7.jpg" alt="">
                                                         <div>
-                                                            <a href="#">Rise of the Guardians </a>
+                                                            <a href="">Rise of the Guardians </a>
                                                             <p class="time">Bunny</p>
                                                         </div>
                                                     </div>
@@ -201,7 +201,7 @@
                                                     <div class="cast-left cebleb-film">
                                                         <img src="images/uploads/film8.jpg" alt="">
                                                         <div>
-                                                            <a href="#">The Prestige </a>
+                                                            <a href="">The Prestige </a>
                                                             <p class="time">Robert Angier</p>
                                                         </div>
                                                     </div>
@@ -212,7 +212,7 @@
                                         <div class="col-md-4 col-xs-12 col-sm-12">
                                             <div class="sb-it">
                                                 <h6>Fullname:  </h6>
-                                                <p><a href="#">Hugh Jackman</a></p>
+                                                <p><a href="">Hugh Jackman</a></p>
                                             </div>
                                             <div class="sb-it">
                                                 <h6>Date of Birth: </h6>
@@ -229,11 +229,11 @@
                                             <div class="sb-it">
                                                 <h6>Keywords:</h6>
                                                 <p class="tags">
-                                                    <span class="time"><a href="#">jackman</a></span>
-                                                    <span class="time"><a href="#">wolverine</a></span>
-                                                    <span class="time"><a href="#">logan</a></span>
-                                                    <span class="time"><a href="#">blockbuster</a></span>
-                                                    <span class="time"><a href="#">final battle</a></span>
+                                                    <span class="time"><a href="">jackman</a></span>
+                                                    <span class="time"><a href="">wolverine</a></span>
+                                                    <span class="time"><a href="">logan</a></span>
+                                                    <span class="time"><a href="">blockbuster</a></span>
+                                                    <span class="time"><a href="">final battle</a></span>
                                                 </p>
                                             </div>
                                             <div class="ads">
@@ -276,7 +276,7 @@
                                                     <a class="fancybox-media hvr-grow"  href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Trailer:  Watch New Scenes</a></h6>
+                                                    <h6> <a href="">Trailer:  Watch New Scenes</a></h6>
                                                     <p class="time"> 1: 31</p>
                                                 </div>
                                             </div>
@@ -286,7 +286,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Featurette: “Avengers Re-Assembled</a></h6>
+                                                    <h6> <a href="">Featurette: “Avengers Re-Assembled</a></h6>
                                                     <p class="time"> 1: 03</p>
                                                 </div>
                                             </div>
@@ -296,7 +296,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Interview: Robert Downey Jr</a></h6>
+                                                    <h6> <a href="">Interview: Robert Downey Jr</a></h6>
                                                     <p class="time"> 3:27</p>
                                                 </div>
                                             </div>
@@ -306,7 +306,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Interview: Scarlett Johansson</a></h6>
+                                                    <h6> <a href="">Interview: Scarlett Johansson</a></h6>
                                                     <p class="time"> 3:27</p>
                                                 </div>
                                             </div>
@@ -316,7 +316,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
+                                                    <h6> <a href="">Featurette: Meet Quicksilver & The Scarlet Witch</a></h6>
                                                     <p class="time"> 1: 31</p>
                                                 </div>
                                             </div>
@@ -326,7 +326,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Interview: Director Joss Whedon</a></h6>
+                                                    <h6> <a href="">Interview: Director Joss Whedon</a></h6>
                                                     <p class="time"> 1: 03</p>
                                                 </div>
                                             </div>
@@ -336,7 +336,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Interview: Mark Ruffalo</a></h6>
+                                                    <h6> <a href="">Interview: Mark Ruffalo</a></h6>
                                                     <p class="time"> 3:27</p>
                                                 </div>
                                             </div>
@@ -346,7 +346,7 @@
                                                     <a class="fancybox-media hvr-grow" href="https://www.youtube.com/embed/o-0hcF97wy0"><img src="images/uploads/play-vd.png" alt=""></a>
                                                 </div>
                                                 <div class="vd-infor">
-                                                    <h6> <a href="#">Official Trailer #2</a></h6>
+                                                    <h6> <a href="">Official Trailer #2</a></h6>
                                                     <p class="time"> 3:27</p>
                                                 </div>
                                             </div>
@@ -406,7 +406,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film1.jpg" alt="">
                                                     <div>
-                                                        <a href="#">X-Men: Apocalypse </a>
+                                                        <a href="">X-Men: Apocalypse </a>
                                                         <p class="time">Logan</p>
                                                     </div>
 
@@ -417,7 +417,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film2.jpg" alt="">
                                                     <div>
-                                                        <a href="#">Eddie the Eagle </a>
+                                                        <a href="">Eddie the Eagle </a>
                                                         <p class="time">Bronson Peary</p>
                                                     </div>
                                                 </div>
@@ -427,7 +427,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film3.jpg" alt="">
                                                     <div>
-                                                        <a href="#">Me and Earl and the Dying Girl </a>
+                                                        <a href="">Me and Earl and the Dying Girl </a>
                                                         <p class="time">Hugh Jackman</p>
                                                     </div>
                                                 </div>
@@ -437,7 +437,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film4.jpg" alt="">
                                                     <div>
-                                                        <a href="#">Night at the Museum 3 </a>
+                                                        <a href="">Night at the Museum 3 </a>
                                                         <p class="time">Blackbeard</p>
                                                     </div>
                                                 </div>
@@ -447,7 +447,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film5.jpg" alt="">
                                                     <div>
-                                                        <a href="#">X-Men: Days of Future Past </a>
+                                                        <a href="">X-Men: Days of Future Past </a>
                                                         <p class="time">Wolverine</p>
                                                     </div>
                                                 </div>
@@ -457,7 +457,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film6.jpg" alt="">
                                                     <div>
-                                                        <a href="#">The Wolverine </a>
+                                                        <a href="">The Wolverine </a>
                                                         <p class="time">Logan</p>
                                                     </div>
                                                 </div>
@@ -467,7 +467,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film7.jpg" alt="">
                                                     <div>
-                                                        <a href="#">Rise of the Guardians </a>
+                                                        <a href="">Rise of the Guardians </a>
                                                         <p class="time">Bunny</p>
                                                     </div>
                                                 </div>
@@ -477,7 +477,7 @@
                                                 <div class="cast-left cebleb-film">
                                                     <img src="images/uploads/film8.jpg" alt="">
                                                     <div>
-                                                        <a href="#">The Prestige </a>
+                                                        <a href="">The Prestige </a>
                                                         <p class="time">Robert Angier</p>
                                                     </div>
                                                 </div>

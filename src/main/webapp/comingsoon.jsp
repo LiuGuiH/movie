@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                         <h3>Nofication me</h3>
-                        <form action="#">
+                        <form action="">
                             <input class="email" type="text" placeholder="Enter your email">
                             <input class="redbtn" type="submit" placeholder="subscribe">
                         </form>

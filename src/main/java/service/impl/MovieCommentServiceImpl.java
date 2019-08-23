@@ -4,10 +4,11 @@ import dao.MovieCommentMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pojo.MovieComment;
+import service.MovieCommentService;
 
 import java.util.List;
 @Service
-public class MovieCommentServiceImpl implements MovieCommentMapper {
+public class MovieCommentServiceImpl implements MovieCommentService {
     @Autowired
     private MovieCommentMapper movieCommentMapper;
 
@@ -34,5 +35,10 @@ public class MovieCommentServiceImpl implements MovieCommentMapper {
     @Override
     public int updateByPrimaryKey(MovieComment record) {
         return movieCommentMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public List<MovieComment> selectAllByMovieId(Integer movieid) {
+        return movieCommentMapper.selectAllByMovieId(movieid);
     }
 }

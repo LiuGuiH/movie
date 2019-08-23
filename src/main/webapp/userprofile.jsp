@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,7 +64,7 @@
                 <div class="hero-ct">
                     <h1>Edward kennedy’s profile</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span>Profile</li>
                     </ul>
                 </div>
@@ -78,8 +78,8 @@
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="user-information">
                     <div class="user-img">
-                        <a href="#"><img src="images/uploads/user-img.png" alt=""><br></a>
-                        <a href="#" class="redbtn">Change avatar</a>
+                        <a href=""><img src="images/uploads/user-img.png" alt=""><br></a>
+                        <a href="" class="redbtn">Change avatar</a>
                     </div>
                     <div class="user-fav">
                         <p>Account Details</p>
@@ -92,8 +92,8 @@
                     <div class="user-fav">
                         <p>Others</p>
                         <ul>
-                            <li><a href="#">Change password</a></li>
-                            <li><a href="#">Log out</a></li>
+                            <li><a href="">Change password</a></li>
+                            <li><a href="">Log out</a></li>
                         </ul>
                     </div>
                 </div>

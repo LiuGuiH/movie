@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,7 +64,7 @@
                 <div class="hero-ct">
                     <h1> blog listing - grid</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> blog listing</li>
                     </ul>
                 </div>
@@ -174,15 +174,15 @@
                     </div>
                 </div>
                 <ul class="pagination">
-                    <li class="icon-prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">...</a></li>
-                    <li><a href="#">21</a></li>
-                    <li><a href="#">22</a></li>
-                    <li class="icon-next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+                    <li class="icon-prev"><a href=""><i class="ion-ios-arrow-left"></i></a></li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">21</a></li>
+                    <li><a href="">22</a></li>
+                    <li class="icon-next"><a href=""><i class="ion-ios-arrow-right"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12">
@@ -194,35 +194,35 @@
                     <div class="sb-cate sb-it">
                         <h4 class="sb-title">Categories</h4>
                         <ul>
-                            <li><a href="#">Awards (50)</a></li>
-                            <li><a href="#">Box office (38)</a></li>
-                            <li><a href="#">Film reviews (72)</a></li>
-                            <li><a href="#">News (45)</a></li>
-                            <li><a href="#">Global (06)</a></li>
+                            <li><a href="">Awards (50)</a></li>
+                            <li><a href="">Box office (38)</a></li>
+                            <li><a href="">Film reviews (72)</a></li>
+                            <li><a href="">News (45)</a></li>
+                            <li><a href="">Global (06)</a></li>
                         </ul>
                     </div>
                     <div class="sb-recentpost sb-it">
                         <h4 class="sb-title">most popular</h4>
                         <div class="recent-item">
-                            <span>01</span><h6><a href="#">Korea Box Office: Beauty and the Beast Wins Fourth</a></h6>
+                            <span>01</span><h6><a href="">Korea Box Office: Beauty and the Beast Wins Fourth</a></h6>
                         </div>
                         <div class="recent-item">
-                            <span>02</span><h6><a href="#">Homeland Finale Includes Shocking Death </a></h6>
+                            <span>02</span><h6><a href="">Homeland Finale Includes Shocking Death </a></h6>
                         </div>
                         <div class="recent-item">
-                            <span>03</span><h6><a href="#">Fate of the Furious Reviews What the Critics Saying</a></h6>
+                            <span>03</span><h6><a href="">Fate of the Furious Reviews What the Critics Saying</a></h6>
                         </div>
                     </div>
                     <div class="sb-tags sb-it">
                         <h4 class="sb-title">tags</h4>
                         <ul class="tag-items">
-                            <li><a href="#">Batman</a></li>
-                            <li><a href="#">film</a></li>
-                            <li><a href="#">homeland</a></li>
-                            <li><a href="#">Fast & Furious</a></li>
-                            <li><a href="#">Dead Walker</a></li>
-                            <li><a href="#">King</a></li>
-                            <li><a href="#">Beauty</a></li>
+                            <li><a href="">Batman</a></li>
+                            <li><a href="">film</a></li>
+                            <li><a href="">homeland</a></li>
+                            <li><a href="">Fast & Furious</a></li>
+                            <li><a href="">Dead Walker</a></li>
+                            <li><a href="">King</a></li>
+                            <li><a href="">Beauty</a></li>
                         </ul>
                     </div>
                     <div class="ads">

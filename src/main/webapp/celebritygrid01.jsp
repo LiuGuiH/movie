@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <link rel="profile" href="#">
+    <link rel="profile" href="">
 
     <!--Google Font-->
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
@@ -64,7 +64,7 @@
                 <div class="hero-ct">
                     <h1>celebrity listing - grid</h1>
                     <ul class="breadcumb">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span> celebrity listing</li>
                     </ul>
                 </div>
@@ -166,13 +166,13 @@
 
                     <div class="pagination2">
                         <span>Page 1 of 6:</span>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#"><i class="ion-arrow-right-b"></i></a>
+                        <a class="active" href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">4</a>
+                        <a href="">5</a>
+                        <a href="">6</a>
+                        <a href=""><i class="ion-arrow-right-b"></i></a>
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                 <div class="sidebar">
                     <div class="searh-form">
                         <h4 class="sb-title">Search celebrity</h4>
-                        <form class="form-style-1 celebrity-form" action="#">
+                        <form class="form-style-1 celebrity-form" action="">
                             <div class="row">
                                 <div class="col-md-12 form-it">
                                     <label>Celebrity name</label>
@@ -229,30 +229,30 @@
                     <div class="celebrities">
                         <h4 class="sb-title">featured celebrity</h4>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava1.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava1.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Samuel N. Jack</a></h6>
+                                <h6><a href="">Samuel N. Jack</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava2.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava2.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Benjamin Carroll</a></h6>
+                                <h6><a href="">Benjamin Carroll</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava3.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava3.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Beverly Griffin</a></h6>
+                                <h6><a href="">Beverly Griffin</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>
                         <div class="celeb-item">
-                            <a href="#"><img src="images/uploads/ava4.jpg" alt=""></a>
+                            <a href=""><img src="images/uploads/ava4.jpg" alt=""></a>
                             <div class="celeb-author">
-                                <h6><a href="#">Justin Weaver</a></h6>
+                                <h6><a href="">Justin Weaver</a></h6>
                                 <span>Actor</span>
                             </div>
                         </div>

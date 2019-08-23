@@ -87,4 +87,7 @@
   <select id="searchByLike" parameterType="java.lang.String" resultMap="BaseResultMap">
     select * from movie where movieName like '%${movieName}%'
   </select>
+  <select id="searchByTypeLike" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select * from movie where movieType like '%${movieType}%'
+  </select>
 </mapper>

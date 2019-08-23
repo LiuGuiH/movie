@@ -10,4 +10,5 @@ public interface TVPlayCommentService {
     TVPlayComment selectByPrimaryKey(Integer typlaycommentid);
     List<TVPlayComment> selectAll();
     int updateByPrimaryKey(TVPlayComment record);
+    List<TVPlayComment> selectAllByTVId(Integer typlayid);
 }
