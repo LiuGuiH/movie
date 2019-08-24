@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1>Edward kennedy’s profile</h1>
+                    <h1>${user.username}’s profile</h1>
                     <ul class="breadcumb">
                         <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span>Profile</li>
@@ -82,42 +82,43 @@
                     </div>
                     <div class="user-fav">
                         <ul>
-                            <li><a href="userdetails.jsp">Account Details</a></li>
-                            <li  class="active"><a href="userprofile.jsp">Profile</a></li>
+                            <li><a href="userdetails?userid=${user.userid}">Account Details</a></li>
+                            <li  class="active"><a href="userprofile?userid=${user.userid}">Profile</a></li>
                             <li><a href="userfavoritelist.jsp">Favorite movies</a></li>
-                            <li><a href="userrate.jsp">Rated movies</a></li>
+                            <li><a href="userrate?userid=${user.userid}">Rated movies</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="form-style-1 user-pro" action="">
-                    <form action="" class="user">
+                    <form action="saveUserInfo?userid=${user.userid}" class="user">
                         <h4>01. Profile details</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Username</label>
-                                <input type="text" placeholder="edwardkennedy">
+                                <label>UserName</label>
+                                <input type="hidden" name="userid" value="${user.userid}">
+                                <input type="text" placeholder="edwardkennedy" value="${user.username}" readonly="readonly">
                             </div>
                             <div class="col-md-6 form-it">
-                                <label>Email Address</label>
-                                <input type="text" placeholder="edward@kennedy.com">
+                                <label>Email</label>
+                                <input type="text" value="${user.email}" placeholder="空" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>First Name</label>
-                                <input type="text" placeholder="Edward ">
+                                <label>FirstName</label>
+                                <input type="text" name="firstname" value="${userInfo.firstname}" placeholder="Edward ">
                             </div>
                             <div class="col-md-6 form-it">
-                                <label>Last Name</label>
-                                <input type="text" placeholder="Kennedy">
+                                <label>LastName</label>
+                                <input type="text" name="lastname" value="${userInfo.lastname}" placeholder="Kennedy">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Address</label>
-                                <input type="text" placeholder="Address">
+                                <input type="text" name="address" value="${userInfo.address}" placeholder="Address">
                             </div>
                         </div>
                         <div class="row">
@@ -126,24 +127,19 @@
                             </div>
                         </div>
                     </form>
-                    <form action="" class="password">
+                    <form action="modifyPassword" class="password">
                         <h4>02. Change password</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Old Password</label>
-                                <input type="text" placeholder="**********">
+                                <input type="hidden" name="userid" value="${user.userid}">
+                                <input type="text" name="oldPassword" placeholder="**********"><font color="red">${msg}</font>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>New Password</label>
-                                <input type="text" placeholder="***************">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-it">
-                                <label>Confirm New Password</label>
-                                <input type="text" placeholder="*************** ">
+                                <input type="text" name="newPassword" placeholder="***************">
                             </div>
                         </div>
                         <div class="row">

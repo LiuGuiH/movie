@@ -77,12 +77,12 @@
         <div class="row ipad-width2">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Found <span>${tvPlays.size()} tvPlays</span> in total</p>
+                    <p>Found <span>${tvPlayListPageInfo.total} tvPlays</span> in total</p>
                     <a href="tvplaylist" class="list"><i class="ion-ios-list-outline active"></i></a>
                 </div>
                 <div class="result-content">
-                    <c:if test="${!empty pageInfo.list }">
-                        <c:forEach items="${pageInfo.list}" var="tvplay">
+                    <c:if test="${!empty tvPlayListPageInfo.list }">
+                        <c:forEach items="${tvPlayListPageInfo.list}" var="tvplay">
                             <div class="movie-item-style-2">
                                 <img src="${tvplay.tvuri}" alt="">
                                 <div class="mv-item-infor">
@@ -100,9 +100,9 @@
 
                     <!-- 分页信息 -->
 
-                    <!-- 分页文字信息，其中分页信息都封装在pageInfo中 -->
+                    <!-- 分页文字信息，其中分页信息都封装在tvPlayListPageInfo中 -->
                     <div class="col-md-6">
-                        当前第：${pageInfo.pageNum}页，总共：${pageInfo.pages}页，总共：${pageInfo.total}条记录
+                        当前第：${tvPlayListPageInfo.pageNum}页，总共：${tvPlayListPageInfo.pages}页，总共：${tvPlayListPageInfo.total}条记录
                     </div>
 
                     <!-- 分页条 -->
@@ -110,29 +110,29 @@
                         <nav aria-label="Page navigation">
                             <ul class="pagination">
                                 <li><a href="tvplaylist?pn=1" rel="external nofollow" >首页</a></li>
-                                <c:if test="${pageInfo.hasPreviousPage }">
+                                <c:if test="${tvPlayListPageInfo.hasPreviousPage }">
                                     <li>
-                                        <a href="tvplaylist?pn=${pageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
+                                        <a href="tvplaylist?pn=${tvPlayListPageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
                                             <span aria-hidden="true">«</span>
                                         </a>
                                     </li>
                                 </c:if>
-                                <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
-                                    <c:if test="${page_Num == pageInfo.pageNum }">
+                                <c:forEach items="${tvPlayListPageInfo.navigatepageNums }" var="page_Num">
+                                    <c:if test="${page_Num == tvPlayListPageInfo.pageNum }">
                                         <li class="active"><a href="" rel="external nofollow" >${ page_Num}</a></li>
                                     </c:if>
-                                    <c:if test="${page_Num != pageInfo.pageNum }">
+                                    <c:if test="${page_Num != tvPlayListPageInfo.pageNum }">
                                         <li><a href="tvplaylist?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>
                                     </c:if>
                                 </c:forEach>
-                                <c:if test="${pageInfo.hasNextPage }">
+                                <c:if test="${tvPlayListPageInfo.hasNextPage }">
                                     <li>
-                                        <a href="tvplaylist?pn=${pageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
+                                        <a href="tvplaylist?pn=${tvPlayListPageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
                                             <span aria-hidden="true">»</span>
                                         </a>
                                     </li>
                                 </c:if>
-                                <li><a href="tvplaylist?pn=${pageInfo.pages}" rel="external nofollow" >末页</a></li>
+                                <li><a href="tvplaylist?pn=${tvPlayListPageInfo.pages}" rel="external nofollow" >末页</a></li>
                             </ul>
                         </nav>
                     </div>

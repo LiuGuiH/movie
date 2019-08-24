@@ -11,4 +11,5 @@ public interface MovieCommentService {
     List<MovieComment> selectAll();
     int updateByPrimaryKey(MovieComment record);
     List<MovieComment> selectAllByMovieId(Integer movieid);
+    List<MovieComment> selectAllByUserId(Integer userid);
 }

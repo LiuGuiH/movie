@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="hero-ct">
-                    <h1>Edward kennedy’s profile</h1>
+                    <h1>${user.username}’s profile</h1>
                     <ul class="breadcumb">
                         <li class="active"><a href="">Home</a></li>
                         <li> <span class="ion-ios-arrow-right"></span>Profile</li>
@@ -82,10 +82,10 @@
                     </div>
                     <div class="user-fav">
                         <ul>
-                            <li  class="active"><a href="userdetails.jsp">Account Details</a></li>
-                            <li><a href="userprofile.jsp">Profile</a></li>
+                            <li  class="active"><a href="userdetails?userid=${user.userid}">Account Details</a></li>
+                            <li><a href="userprofile?userid=${user.userid}">Profile</a></li>
                             <li><a href="userfavoritelist.jsp">Favorite movies</a></li>
-                            <li><a href="userrate.jsp">Rated movies</a></li>
+                            <li><a href="userrate?userid=${user.userid}">Rated movies</a></li>
                         </ul>
                     </div>
 
@@ -97,32 +97,32 @@
                         <h4>Account details</h4>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Username</label>
-                                <input type="text" placeholder="edwardkennedy" readonly="readonly">
+                                <label>UserName</label>
+                                <input type="text" placeholder="空" value="${user.username}" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Email Address</label>
-                                <input type="text" placeholder="edward@kennedy.com" readonly="readonly">
+                                <label>Email</label>
+                                <input type="text" placeholder="空" value="${user.email}" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>First Name</label>
-                                <input type="text" placeholder="Edward " readonly="readonly">
+                                <label>FirstName</label>
+                                <input type="text" placeholder="空 " value="${userInfo.firstname}" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
-                                <label>Last Name</label>
-                                <input type="text" placeholder="Kennedy" readonly="readonly">
+                                <label>LastName</label>
+                                <input type="text" placeholder="空" value="${userInfo.lastname}" readonly="readonly">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-it">
                                 <label>Address</label>
-                                <input type="text" placeholder="Address" readonly="readonly">
+                                <input type="text" placeholder="空" value="${userInfo.address}" readonly="readonly">
                             </div>
                         </div>
                     </form>

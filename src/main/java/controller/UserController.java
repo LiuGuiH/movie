@@ -18,13 +18,15 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.TimeZone;
+
 
 
 @Controller
 public class UserController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private UserInfoService userInfoService;
     @Autowired
     private MovieService movieService;
     @Autowired
@@ -96,7 +98,7 @@ public class UserController {
         List<Movie> mediaList = movieService.selectAll();
         //将用户信息放入PageInfo对象里
         PageInfo pageInfo = new PageInfo(mediaList,3);
-        request.setAttribute("pageInfo", pageInfo);
+        request.setAttribute("MoviePageInfo", pageInfo);
         return "movielist";
     }
 
@@ -107,7 +109,7 @@ public class UserController {
         List<Movie> mediaList = movieService.selectAll();
         //将用户信息放入PageInfo对象里
         PageInfo pageInfo = new PageInfo(mediaList,3);
-        request.setAttribute("pageInfo", pageInfo);
+        request.setAttribute("movieGridPageInfo", pageInfo);
         return "moviegrid";
     }
 
@@ -118,7 +120,7 @@ public class UserController {
         List<Movie> mediaList = movieService.selectAll();
         //将用户信息放入PageInfo对象里
         PageInfo pageInfo = new PageInfo(mediaList,3);
-        request.setAttribute("pageInfo", pageInfo);
+        request.setAttribute("movieGridfwPageInfo", pageInfo);
         return "moviegridfw";
     }
 
@@ -129,7 +131,7 @@ public class UserController {
         List<TVPlay> mediaList = tvPlayService.selectAll();
         //将用户信息放入PageInfo对象里
         PageInfo pageInfo = new PageInfo(mediaList,3);
-        request.setAttribute("pageInfo", pageInfo);
+        request.setAttribute("tvPlayListPageInfo", pageInfo);
         return "tvplaylist";
     }
 
@@ -169,7 +171,6 @@ public class UserController {
         return "seriessingle";
     }
 
-
     @RequestMapping("/movieComment")
     @ResponseBody
     public MovieComment movieComment(@RequestParam String title, @RequestParam Integer star0, @RequestParam String content, @RequestParam Integer userid, @RequestParam Integer movieid, HttpServletResponse response,HttpServletRequest request) throws IOException {
@@ -207,5 +208,60 @@ public class UserController {
 
     }
 
+    @RequestMapping("/userdetails")
+    public String userdetails(@RequestParam Integer userid,HttpServletRequest request){
+        UserInfo userInfo=userInfoService.selectByUserId(userid);
+        request.getSession().setAttribute("userInfo",userInfo);
+        return "userdetails";
+    }
 
+    @RequestMapping("/userprofile")
+    public String saveUserInfo(@RequestParam Integer userid,HttpServletRequest request){
+        UserInfo userInfo=userInfoService.selectByUserId(userid);
+        request.getSession().setAttribute("userInfo",userInfo);
+        return "userprofile";
+    }
+
+
+    @RequestMapping("/saveUserInfo")
+    public String saveUserInfo(HttpServletRequest request,@RequestParam Integer userid,@RequestParam String firstname,@RequestParam String lastname,@RequestParam String address){
+        UserInfo userInfo=new UserInfo(userid,firstname,lastname,address);
+        userInfoService.insert(userInfo);
+        UserInfo userInfo1=userInfoService.selectByUserId(userid);
+        request.getSession().setAttribute("userInfo",userInfo1);
+        return "userprofile";
+    }
+
+    @RequestMapping("/modifyPassword")
+    public String modifyPassword(HttpServletRequest request,@RequestParam Integer userid,@RequestParam String oldPassword,@RequestParam String newPassword){
+        User user=userService.selectByPrimaryKey(userid);
+        User user1=new User();
+        user1.setPassword(newPassword);
+        user1.setUserid(userid);
+        user1.setUsername(user.getUsername());
+        user.setEmail(user.getEmail());
+        if (user.getPassword().equals(oldPassword)){
+            userService.updateByPrimaryKey(user1);
+            return "userprofile";
+        }else {
+            request.getSession().setAttribute("msg","密码错误！");
+            return "userprofile";
+        }
+    }
+
+    @RequestMapping("/userrate")
+    public String userrate(HttpServletRequest request,@RequestParam Integer userid,@RequestParam(required = false,value="pn",defaultValue="1")Integer pn){
+        //从第一条开始 每页查询三条数据
+        PageHelper.startPage(pn, 3);
+        //将用户信息放入PageInfo对象里
+        List<MovieComment> movieComments1=movieCommentService.selectAllByUserId(userid);
+        List<Movie> movies1=new ArrayList<>();
+        PageInfo pageInfo = new PageInfo(movieComments1,3);
+        for (MovieComment movieComment:movieComments1){
+            movies1.add(movieService.selectByPrimaryKey(movieComment.getMovieid()));
+        }
+        request.setAttribute("movieCommentsPageInfo", pageInfo);
+        request.setAttribute("movies1",movies1);
+        return "userrate";
+    }
 }

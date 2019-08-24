@@ -1,6 +1,7 @@
 package service;
 
 import pojo.User;
+import pojo.UserInfo;
 
 import java.util.List;
 
@@ -12,5 +13,4 @@ public interface UserService {
     List<User> selectAll();
     int updateByPrimaryKey(User record);
     User selectByUsername(String username);
-
 }

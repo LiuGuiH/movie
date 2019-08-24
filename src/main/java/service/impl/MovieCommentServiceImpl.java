@@ -41,4 +41,9 @@ public class MovieCommentServiceImpl implements MovieCommentService {
     public List<MovieComment> selectAllByMovieId(Integer movieid) {
         return movieCommentMapper.selectAllByMovieId(movieid);
     }
+
+    @Override
+    public List<MovieComment> selectAllByUserId(Integer userid) {
+        return movieCommentMapper.selectAllByUserId(userid);
+    }
 }

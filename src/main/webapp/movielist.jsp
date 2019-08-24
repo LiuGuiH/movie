@@ -77,13 +77,13 @@
         <div class="row ipad-width2">
             <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Found <span>${movies.size()} movies</span> in total</p>
+                    <p>Found <span>${MoviePageInfo.total} movies</span> in total</p>
                     <a href="movielist" class="list"><i class="ion-ios-list-outline active"></i></a>
                     <a href="moviegrid" class="grid"><i class="ion-grid"></i></a>
                 </div>
                 <div class="result-content">
-                        <c:if test="${!empty pageInfo.list }">
-                            <c:forEach items="${pageInfo.list}" var="movie">
+                        <c:if test="${!empty MoviePageInfo.list }">
+                            <c:forEach items="${MoviePageInfo.list}" var="movie">
                                 <div class="movie-item-style-2">
                                     <img src="${movie.movieuri}" alt="">
                                     <div class="mv-item-infor">
@@ -101,9 +101,9 @@
 
                     <!-- 分页信息 -->
 
-                        <!-- 分页文字信息，其中分页信息都封装在pageInfo中 -->
+                        <!-- 分页文字信息，其中分页信息都封装在MoviePageInfo中 -->
                         <div class="col-md-6">
-                            当前第：${pageInfo.pageNum}页，总共：${pageInfo.pages}页，总共：${pageInfo.total}条记录
+                            当前第：${MoviePageInfo.pageNum}页，总共：${MoviePageInfo.pages}页，总共：${MoviePageInfo.total}条记录
                         </div>
 
                         <!-- 分页条 -->
@@ -111,29 +111,29 @@
                             <nav aria-label="Page navigation">
                                 <ul class="pagination">
                                     <li><a href="movielist?pn=1" rel="external nofollow" >首页</a></li>
-                                    <c:if test="${pageInfo.hasPreviousPage }">
+                                    <c:if test="${MoviePageInfo.hasPreviousPage }">
                                         <li>
-                                            <a href="movielist?pn=${pageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
+                                            <a href="movielist?pn=${MoviePageInfo.pageNum-1}" rel="external nofollow" aria-label="Previous">
                                                 <span aria-hidden="true">«</span>
                                             </a>
                                         </li>
                                     </c:if>
-                                    <c:forEach items="${pageInfo.navigatepageNums }" var="page_Num">
-                                        <c:if test="${page_Num == pageInfo.pageNum }">
+                                    <c:forEach items="${MoviePageInfo.navigatepageNums }" var="page_Num">
+                                        <c:if test="${page_Num == MoviePageInfo.pageNum }">
                                             <li class="active"><a href="" rel="external nofollow" >${ page_Num}</a></li>
                                         </c:if>
-                                        <c:if test="${page_Num != pageInfo.pageNum }">
+                                        <c:if test="${page_Num != MoviePageInfo.pageNum }">
                                             <li><a href="movielist?pn=${ page_Num}" rel="external nofollow" >${ page_Num}</a></li>
                                         </c:if>
                                     </c:forEach>
-                                    <c:if test="${pageInfo.hasNextPage }">
+                                    <c:if test="${MoviePageInfo.hasNextPage }">
                                         <li>
-                                            <a href="movielist?pn=${pageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
+                                            <a href="movielist?pn=${MoviePageInfo.pageNum+1}" rel="external nofollow" aria-label="Next">
                                                 <span aria-hidden="true">»</span>
                                             </a>
                                         </li>
                                     </c:if>
-                                    <li><a href="movielist?pn=${pageInfo.pages}" rel="external nofollow" >末页</a></li>
+                                    <li><a href="movielist?pn=${MoviePageInfo.pages}" rel="external nofollow" >末页</a></li>
                                 </ul>
                             </nav>
                         </div>
