@@ -84,7 +84,7 @@
                         <ul>
                             <li><a href="userdetails?userid=${user.userid}">Account Details</a></li>
                             <li><a href="userprofile?userid=${user.userid}">Profile</a></li>
-                            <li><a href="userfavoritelist.jsp">Favorite movies</a></li>
+                            <li><a href="userfavoritelist?userid=${user.userid}">Favorite movies</a></li>
                             <li  class="active"><a href="userrate?userid=${user.userid}">Rated movies</a></li>
                         </ul>
                     </div>

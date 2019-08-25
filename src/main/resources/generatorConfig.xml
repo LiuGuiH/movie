@@ -51,6 +51,7 @@
     <table tableName="TVPlay" domainObjectName="TVPlay"></table>-->
     <!--<table tableName="tvplayComment" domainObjectName="TVPlayComment"></table>
     <table tableName="movieComment" domainObjectName="MovieComment"></table>-->
-    <table tableName="userinfo" domainObjectName="UserInfo"></table>
+    <!--<table tableName="userinfo" domainObjectName="UserInfo"></table>-->
+    <table tableName="favorite" domainObjectName="Favorite"></table>
   </context>
 </generatorConfiguration>

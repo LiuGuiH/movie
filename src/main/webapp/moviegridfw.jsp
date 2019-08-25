@@ -87,7 +87,7 @@
                                 <div class="movie-item-style-2 movie-item-style-1">
                                     <img src="${movie.movieuri}" alt="">
                                     <div class="hvr-inner">
-                                        <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                        <a  href="moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
                                     </div>
                                     <div class="mv-item-infor">
                                         <h6><a href="">${movie.moviename}</a></h6>

@@ -84,7 +84,7 @@
                         <ul>
                             <li><a href="userdetails?userid=${user.userid}">Account Details</a></li>
                             <li><a href="userprofile?userid=${user.userid}">Profile</a></li>
-                            <li  class="active"><a href="userfavoritelist.jsp">Favorite movies</a></li>
+                            <li  class="active"><a href="userfavoritelist?userid=${user.userid}">Favorite movies</a></li>
                             <li><a href="userrate?userid=${user.userid}">Rated movies</a></li>
                         </ul>
                     </div>
@@ -92,22 +92,84 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter user">
-                    <p>Found <span>1,608 movies</span> in total</p>
-                    <a href="userfavoritelist.jsp" class="list"><i class="ion-ios-list-outline active"></i></a>
-                    <a href="userfavoritegrid.jsp" class="grid"><i class="ion-grid "></i></a>
+                    <p>Found <span>${userfavoritelist.total} show</span> in total</p>
+                    <a href="userfavoritelist?userid=${user.userid}" class="list"><i class="ion-ios-list-outline active"></i></a>
+                    <a href="userfavoritegrid?userid=${user.userid}" class="grid"><i class="ion-grid "></i></a>
                 </div>
                 <div class="flex-wrap-movielist user-fav-list">
-                    <div class="movie-item-style-2">
-                        <img src="images/uploads/mv1.jpg" alt="">
-                        <div class="mv-item-infor">
-                            <h6><a href="">oblivion <span>(2012)</span></a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-                            <p class="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-                            <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-                            <p>Director: <a href="">Joss Whedon</a></p>
-                            <p>Stars: <a href="">Robert Downey Jr.,</a> <a href="">Chris Evans,</a> <a href="">  Chris Hemsworth</a></p>
-                        </div>
+
+                    <c:if test="${!empty userfavoritelist.list }">
+                        <c:forEach items="${favoriteMovies}" var="movie">
+                            <div class="movie-item-style-2">
+                                <img src="${movie.movieuri}" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="moviesingle?movieid=${movie.movieid}">${movie.moviename}</a></h6>
+                                    <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                    <p class="describe">${movie.movieoverview}</p>
+                                    <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                    <p>Director: <a href="">Joss Whedon</a></p>
+                                    <p>Stars: <a href="">Robert Downey Jr.,</a> <a href="">Chris Evans,</a> <a href="">  Chris Hemsworth</a></p>
+                                </div>
+                            </div>
+                        </c:forEach>
+                        <c:forEach items="${favoriteTVPlays}" var="tvplay">
+                            <div class="movie-item-style-2">
+                                <img src="${tvplay.tvuri}" alt="">
+                                <div class="mv-item-infor">
+                                    <h6><a href="seriessingle?tvid=${tvplay.tvid}">${tvplay.tvname}</a></h6>
+                                    <p class="rate"><i class="ion-android-star"></i><span>${tvplay.tvstar}</span> /10</p>
+                                    <p class="describe">${tvplay.tvoverview}</p>
+                                    <p class="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
+                                    <p>Director: <a href="">Joss Whedon</a></p>
+                                    <p>Stars: <a href="">Robert Downey Jr.,</a> <a href="">Chris Evans,</a> <a href="">  Chris Hemsworth</a></p>
+                                </div>
+                            </div>
+                        </c:forEach>
+
+
+                    </c:if>
+                    <hr style="height:1px;border:none;border-top:1px solid #ccc;" />
+                    <!-- 分页导航栏 -->
+
+                    <!-- 分页信息 -->
+
+                    <!-- 分页文字信息，其中分页信息都封装在userfavoritelist中 -->
+                    <div class="col-md-6">
+                        当前第：${userfavoritelist.pageNum}页，总共：${userfavoritelist.pages}页，总共：${userfavoritelist.total}条记录
                     </div>
+
+                    <!-- 分页条 -->
+                    <div class="col-md-6">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li><a href="userfavoritelist?pn=1&userid=${user.userid}" rel="external nofollow" >首页</a></li>
+                                <c:if test="${userfavoritelist.hasPreviousPage }">
+                                    <li>
+                                        <a href="userfavoritelist?pn=${userfavoritelist.pageNum-1}&userid=${user.userid}" rel="external nofollow" aria-label="Previous">
+                                            <span aria-hidden="true">«</span>
+                                        </a>
+                                    </li>
+                                </c:if>
+                                <c:forEach items="${userfavoritelist.navigatepageNums }" var="page_Num">
+                                    <c:if test="${page_Num == userfavoritelist.pageNum }">
+                                        <li class="active"><a href="" rel="external nofollow" >${ page_Num}</a></li>
+                                    </c:if>
+                                    <c:if test="${page_Num != userfavoritelist.pageNum }">
+                                        <li><a href="userfavoritelist?pn=${ page_Num}&userid=${user.userid}" rel="external nofollow" >${ page_Num}</a></li>
+                                    </c:if>
+                                </c:forEach>
+                                <c:if test="${userfavoritelist.hasNextPage }">
+                                    <li>
+                                        <a href="userfavoritelist?pn=${userfavoritelist.pageNum+1}&userid=${user.userid}" rel="external nofollow" aria-label="Next">
+                                            <span aria-hidden="true">»</span>
+                                        </a>
+                                    </li>
+                                </c:if>
+                                <li><a href="userfavoritelist?pn=${userfavoritelist.pages}&userid=${user.userid}" rel="external nofollow" >末页</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
                 </div>
             </div>
         </div>

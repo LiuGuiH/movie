@@ -87,7 +87,7 @@
                                 <div class="movie-item-style-2">
                                     <img src="${movie.movieuri}" alt="">
                                     <div class="mv-item-infor">
-                                        <h6><a href="moviesingle.jsp">${movie.moviename}</a></h6>
+                                        <h6><a href="moviesingle?movieid=${movie.movieid}">${movie.moviename}</a></h6>
                                         <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
                                         <p class="describe">${movie.movieoverview}</p>
                                         <p>Director: <a href="">Joss Whedon</a></p>

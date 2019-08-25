@@ -92,7 +92,15 @@
                 <div class="movie-single-ct main-content">
                     <h1 class="bd-hd">${tvPlay.tvname}</h1>
                     <div class="social-btn">
-                        <a href="" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+                        <a id="heart" class="parent-btn">
+                            <c:if test="${tvPlayStatus==null}">
+                                <i id="change-heart" class="ion-ios-heart-outline"></i>
+                            </c:if>
+                            <c:if test="${tvPlayStatus!=null}">
+                                <i id="change-heart" class="ion-ios-heart"></i>
+                            </c:if>
+                            Add to Favorite
+                        </a>
                         <div class="hover-bnt">
                             <a href="" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
                             <div class="hvr-item">
@@ -846,6 +854,36 @@
                 }
             })
         });
+        $("#heart").click(function () {
+            var className = document.getElementById("change-heart").className;
+            if ("ion-ios-heart"==className){
+                var flag=confirm("确定取消关注吗？")
+                if (flag==true){
+                    $("#change-heart").attr("class","ion-ios-heart-outline");
+                    $.ajax({
+                        type:"GET",
+                        url:"deleteFavoriteByTVPlayId",
+                        data:{"tvplayid":${tvPlay.tvid},"userid":${user.userid}},
+                        datatype:"json",
+                        success:function (result) {
+                            console.log(result)
+                        }
+                    })
+                }
+            }else {
+                $("#change-heart").attr("class","ion-ios-heart");
+                $.ajax({
+                    type:"GET",
+                    url:"addFavoriteTVPlay",
+                    data:{"tvplayid":${tvPlay.tvid},"userid":${user.userid}},
+                    datatype:"json",
+                    success:function (result) {
+                        console.log(result)
+                    }
+                })
+            }
+
+        })
     })
 
 

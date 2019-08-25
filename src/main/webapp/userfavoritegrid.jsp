@@ -84,7 +84,7 @@
                         <ul>
                             <li><a href="userdetails?userid=${user.userid}">Account Details</a></li>
                             <li><a href="userprofile?userid=${user.userid}">Profile</a></li>
-                            <li  class="active"><a href="userfavoritelist.jsp">Favorite movies</a></li>
+                            <li  class="active"><a href="userfavoritelist?userid=${user.userid}">Favorite movies</a></li>
                             <li><a href="userrate?userid=${user.userid}">Rated movies</a></li>
                         </ul>
                     </div>
@@ -93,28 +93,88 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter user">
-                    <p>Found <span>1,608 movies</span> in total</p>
-                    <label>Sort by:</label>
-                    <select>
-                        <option value="range">-- Choose option --</option>
-                        <option value="saab">-- Choose option 2--</option>
-                    </select>
-                    <a href="userfavoritelist.jsp" class="list"><i class="ion-ios-list-outline "></i></a>
-                    <a href="userfavoritegrid.jsp" class="grid"><i class="ion-grid active"></i></a>
+                    <p>Found <span>${userfavoritegrid.total} show</span> in total</p>
+                    <a href="userfavoritelist?userid=${user.userid}" class="list"><i class="ion-ios-list-outline "></i></a>
+                    <a href="userfavoritegrid?userid=${user.userid}" class="grid"><i class="ion-grid active"></i></a>
                 </div>
                 <div class="flex-wrap-movielist grid-fav">
-                    <div class="movie-item-style-2 movie-item-style-1 style-3">
-                        <img src="images/uploads/mv1.jpg" alt="">
-                        <div class="hvr-inner">
-                            <a  href="moviesingle.jsp"> Read more <i class="ion-android-arrow-dropright"></i> </a>
-                        </div>
-                        <div class="mv-item-infor">
-                            <h6><a href="moviesingle.jsp">oblivion</a></h6>
-                            <p class="rate"><i class="ion-android-star"></i><span>8.1</span> /10</p>
-                        </div>
-                    </div>
+
+                <c:if test="${!empty userfavoritegrid.list }">
+                    <c:forEach items="${favoriteMovies}" var="movie">
+
+                            <div class="movie-item-style-2 movie-item-style-1 style-3">
+                                <img src="${movie.movieuri}" alt="">
+                                <div class="hvr-inner">
+                                    <a  href="moviesingle?movieid=${movie.movieid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                </div>
+                                <div class="mv-item-infor">
+                                    <h6><a href="moviesingle">${movie.moviename}</a></h6>
+                                    <p class="rate"><i class="ion-android-star"></i><span>${movie.moviestar}</span> /10</p>
+                                </div>
+                            </div>
+
+                    </c:forEach>
+                    <c:forEach items="${favoriteTVPlays}" var="tvplay">
+
+                            <div class="movie-item-style-2 movie-item-style-1 style-3">
+                                <img src="${tvplay.tvuri}" alt="">
+                                <div class="hvr-inner">
+                                    <a  href="seriessingle?tvid=${tvplay.tvid}"> Read more <i class="ion-android-arrow-dropright"></i> </a>
+                                </div>
+                                <div class="mv-item-infor">
+                                    <h6><a href="seriessingle">${tvplay.tvname}</a></h6>
+                                    <p class="rate"><i class="ion-android-star"></i><span>${tvplay.tvstar}</span> /10</p>
+                                </div>
+                            </div>
+
+                    </c:forEach>
+
+
+                </c:if>
+
+                <hr style="height:1px;border:none;border-top:1px solid #ccc;" />
+                <!-- 分页导航栏 -->
+
+                <!-- 分页信息 -->
+
+                <!-- 分页文字信息，其中分页信息都封装在userfavoritegrid中 -->
+                <div class="col-md-6">
+                    当前第：${userfavoritegrid.pageNum}页，总共：${userfavoritegrid.pages}页，总共：${userfavoritegrid.total}条记录
                 </div>
 
+                <!-- 分页条 -->
+                <div class="col-md-6">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li><a href="userfavoritegrid?pn=1&userid=${user.userid}" rel="external nofollow" >首页</a></li>
+                            <c:if test="${userfavoritegrid.hasPreviousPage }">
+                                <li>
+                                    <a href="userfavoritegrid?pn=${userfavoritegrid.pageNum-1}&userid=${user.userid}" rel="external nofollow" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                            </c:if>
+                            <c:forEach items="${userfavoritegrid.navigatepageNums }" var="page_Num">
+                                <c:if test="${page_Num == userfavoritegrid.pageNum }">
+                                    <li class="active"><a href="" rel="external nofollow" >${ page_Num}</a></li>
+                                </c:if>
+                                <c:if test="${page_Num != userfavoritegrid.pageNum }">
+                                    <li><a href="userfavoritegrid?pn=${ page_Num}&userid=${user.userid}" rel="external nofollow" >${ page_Num}</a></li>
+                                </c:if>
+                            </c:forEach>
+                            <c:if test="${userfavoritegrid.hasNextPage }">
+                                <li>
+                                    <a href="userfavoritegrid?pn=${userfavoritegrid.pageNum+1}&userid=${user.userid}" rel="external nofollow" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+                            </c:if>
+                            <li><a href="userfavoritegrid?pn=${userfavoritegrid.pages}&userid=${user.userid}" rel="external nofollow" >末页</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                </div>
             </div>
         </div>
     </div>

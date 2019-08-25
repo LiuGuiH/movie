@@ -35,7 +35,8 @@ public class UserController {
     private MovieCommentService movieCommentService;
     @Autowired
     private TVPlayCommentService tvPlayCommentService;
-
+    @Autowired
+    private FavoriteService favoriteService;
     @RequestMapping("/")
     public String main(HttpServletRequest request){
         List<Movie> movieList=movieService.selectAll();
@@ -146,6 +147,13 @@ public class UserController {
         for (MovieComment movieComment:movieComments){
             usernames.add(userService.selectByPrimaryKey(movieComment.getUserid()).getUsername());
         }
+        List<Favorite> favorites=favoriteService.selectAll();
+        for (Favorite favorite:favorites){
+            if (favorite.getMovieid()==movieid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
+                request.getSession().setAttribute("movieStatus",favorite.getStatus());
+            }
+        }
+
         request.getSession().setAttribute("usernames",usernames);
         request.getSession().setAttribute("movieComments",movieComments);
         request.getSession().setAttribute("ms",ms);
@@ -164,6 +172,13 @@ public class UserController {
         for (TVPlayComment tvPlayComment:tvPlayComments){
             usernames.add(userService.selectByPrimaryKey(tvPlayComment.getUserid()).getUsername());
         }
+        List<Favorite> favorites=favoriteService.selectAll();
+        for (Favorite favorite:favorites){
+            if (favorite.getTvplayid()==tvid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
+                request.getSession().setAttribute("tvPlayStatus",favorite.getStatus());
+            }
+        }
+
         request.getSession().setAttribute("usernames",usernames);
         request.getSession().setAttribute("tvPlayComments",tvPlayComments);
         request.getSession().setAttribute("ts",ts);
@@ -264,4 +279,82 @@ public class UserController {
         request.setAttribute("movies1",movies1);
         return "userrate";
     }
+
+    @RequestMapping("/deleteFavoriteByMovieId")
+    public Favorite deleteFavoriteByMovieId(@RequestParam Integer movieid,@RequestParam Integer userid){
+        favoriteService.deleteFavoriteByMovieId(movieid,userid);
+        return new Favorite();
+    }
+
+    @RequestMapping("/deleteFavoriteByTVPlayId")
+    public Favorite deleteFavoriteByTVPlayId(@RequestParam Integer tvplayid,@RequestParam Integer userid){
+        favoriteService.deleteFavoriteByTVPlayId(tvplayid,userid);
+        return new Favorite();
+    }
+
+    @RequestMapping("/addFavoriteMovie")
+    public Favorite addFavorite(@RequestParam Integer movieid,@RequestParam Integer userid){
+        Favorite favorite=new Favorite();
+        favorite.setMovieid(movieid);
+        favorite.setUserid(userid);
+        favorite.setStatus(1);
+        favoriteService.insert(favorite);
+        return favorite;
+    }
+
+    @RequestMapping("/addFavoriteTVPlay")
+    public Favorite addFavoriteTVPlay(@RequestParam Integer tvplayid,@RequestParam Integer userid){
+        Favorite favorite=new Favorite();
+        favorite.setTvplayid(tvplayid);
+        favorite.setUserid(userid);
+        favorite.setStatus(1);
+        favoriteService.insert(favorite);
+        return favorite;
+    }
+
+    @RequestMapping("/userfavoritelist")
+    public String userfavoritelist(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn,@RequestParam Integer userid,HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 2);
+        List<Favorite> favorites = favoriteService.selectByUserId(userid);
+        List<TVPlay> tvPlays=new ArrayList<>();
+        List<Movie> movies=new ArrayList<>();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(favorites,3);
+        for (Favorite favorite:favorites){
+            if (favorite.getMovieid()==0){
+                tvPlays.add(tvPlayService.selectByPrimaryKey(favorite.getTvplayid()));
+            }else {
+                movies.add(movieService.selectByPrimaryKey(favorite.getMovieid()));
+            }
+        }
+        request.setAttribute("favoriteMovies",movies);
+        request.setAttribute("favoriteTVPlays",tvPlays);
+        request.setAttribute("userfavoritelist", pageInfo);
+       return "userfavoritelist";
+    }
+
+    @RequestMapping("/userfavoritegrid")
+    public String userfavoritegrid(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn,@RequestParam Integer userid, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<Favorite> favorites = favoriteService.selectByUserId(userid);
+        List<TVPlay> tvPlays=new ArrayList<>();
+        List<Movie> movies=new ArrayList<>();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(favorites,3);
+        for (Favorite favorite:favorites){
+            if (favorite.getMovieid()==0){
+                tvPlays.add(tvPlayService.selectByPrimaryKey(favorite.getTvplayid()));
+            }else {
+                movies.add(movieService.selectByPrimaryKey(favorite.getMovieid()));
+            }
+        }
+        request.setAttribute("favoriteMovies",movies);
+        request.setAttribute("favoriteTVPlays",tvPlays);
+        request.setAttribute("userfavoritegrid", pageInfo);
+        return "userfavoritegrid";
+    }
+
 }
+

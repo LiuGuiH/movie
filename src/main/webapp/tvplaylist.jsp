@@ -86,7 +86,7 @@
                             <div class="movie-item-style-2">
                                 <img src="${tvplay.tvuri}" alt="">
                                 <div class="mv-item-infor">
-                                    <h6><a href="moviesingle.jsp">${tvplay.tvname}</a></h6>
+                                    <h6><a href="seriessingle?tvid=${tvplay.tvid}">${tvplay.tvname}</a></h6>
                                     <p class="rate"><i class="ion-android-star"></i><span>${tvplay.tvstar}</span> /10</p>
                                     <p class="describe">${tvplay.tvoverview}</p>
                                     <p>Director: <a href="">Joss Whedon</a></p>
