@@ -18,6 +18,11 @@
                 </label>
             </div>
             <div class="row">
+                 <label>role:</label>
+             <h6>管理员&nbsp;<input type="radio" name="role" value="1" checked="checked" /> &nbsp;&nbsp;用户&nbsp;<input type="radio" name="role"  value="0" checked="checked" /></h6>
+                <br>
+            </div>
+            <div class="row">
                 <div class="remember">
                     <div>
                         <input type="checkbox" name="remember" value="Remember me"><span>Remember me</span>

@@ -43,9 +43,8 @@
                                     <li><a href="moviegridfw">movie grid full width</a></li>
                                 </ul>
                             </li>
-                            <li><a href="movielist">Movie list</a></li>
-                            <li><a href="moviesingle.jsp">Movie single</a></li>
-                            <li class="it-last"><a href="seriessingle.jsp">Series single</a></li>
+                            <li class="it-last"><a href="movielist">Movie list</a></li>
+
                         </ul>
                     </li>
                     <li class="dropdown first">

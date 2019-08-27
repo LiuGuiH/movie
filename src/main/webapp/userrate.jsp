@@ -92,7 +92,7 @@
             </div>
             <div class="col-md-9 col-sm-12 col-xs-12">
                 <div class="topbar-filter">
-                    <p>Found <span>3 rates</span> in total</p>
+                    <p>Found <span>${movieCommentsPageInfo.total} rates</span> in total</p>
                 </div>
 
 

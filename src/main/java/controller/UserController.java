@@ -37,6 +37,10 @@ public class UserController {
     private TVPlayCommentService tvPlayCommentService;
     @Autowired
     private FavoriteService favoriteService;
+    @Autowired
+    private AdminService adminService;
+
+
     @RequestMapping("/")
     public String main(HttpServletRequest request){
         List<Movie> movieList=movieService.selectAll();
@@ -69,11 +73,21 @@ public class UserController {
     public String login(HttpServletRequest request){
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        User user=userService.selectByUsername(username);
-        if(password.equals(user.getPassword())){
-            request.getSession().setAttribute("user",user);
+        String role=request.getParameter("role");
+        if ("0".equals(role)){
+            User user=userService.selectByUsername(username);
+            if(password.equals(user.getPassword())){
+                request.getSession().setAttribute("user",user);
+            }
+            return "redirect:/";
+        }else {
+            Admin admin=adminService.selectByAdminname(username);
+            if (password.equals(admin.getAdminpassword())){
+                request.getSession().setAttribute("user",admin);
+            }
+            return "adminIndex";
         }
-        return "redirect:/";
+
     }
 
     @RequestMapping("/signup")
@@ -147,10 +161,12 @@ public class UserController {
         for (MovieComment movieComment:movieComments){
             usernames.add(userService.selectByPrimaryKey(movieComment.getUserid()).getUsername());
         }
-        List<Favorite> favorites=favoriteService.selectAll();
-        for (Favorite favorite:favorites){
-            if (favorite.getMovieid()==movieid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
-                request.getSession().setAttribute("movieStatus",favorite.getStatus());
+        if (request.getSession().getAttribute("user")!=null){
+            List<Favorite> favorites=favoriteService.selectAll();
+            for (Favorite favorite:favorites){
+                if (favorite.getMovieid()==movieid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
+                    request.getSession().setAttribute("movieStatus",favorite.getStatus());
+                }
             }
         }
 
@@ -172,12 +188,15 @@ public class UserController {
         for (TVPlayComment tvPlayComment:tvPlayComments){
             usernames.add(userService.selectByPrimaryKey(tvPlayComment.getUserid()).getUsername());
         }
-        List<Favorite> favorites=favoriteService.selectAll();
-        for (Favorite favorite:favorites){
-            if (favorite.getTvplayid()==tvid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
-                request.getSession().setAttribute("tvPlayStatus",favorite.getStatus());
+        if (request.getSession().getAttribute("user")!=null){
+            List<Favorite> favorites=favoriteService.selectAll();
+            for (Favorite favorite:favorites){
+                if (favorite.getTvplayid()==tvid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
+                    request.getSession().setAttribute("tvPlayStatus",favorite.getStatus());
+                }
             }
         }
+
 
         request.getSession().setAttribute("usernames",usernames);
         request.getSession().setAttribute("tvPlayComments",tvPlayComments);
@@ -356,5 +375,59 @@ public class UserController {
         return "userfavoritegrid";
     }
 
+    @RequestMapping("/adminComment")
+    public String adminComment(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<MovieComment> adminMovieComments = movieCommentService.selectAll();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(adminMovieComments,3);
+        request.setAttribute("adminComments", pageInfo);
+        return "adminComment";
+    }
+
+    @RequestMapping("/adminTVComment")
+    public String adminTVComment(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<TVPlayComment> adminTVPlayComments = tvPlayCommentService.selectAll();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(adminTVPlayComments,3);
+        request.setAttribute("adminTVComments", pageInfo);
+        return "adminTVComment";
+    }
+
+    @RequestMapping("/adminUser")
+    public String adminUser(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<User> users = userService.selectAll();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(users,3);
+        request.setAttribute("adminUser", pageInfo);
+        return "adminUser";
+    }
+
+    @RequestMapping("/adminList")
+    public String adminList(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<Admin> admins = adminService.selectAll();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(admins,3);
+        request.setAttribute("adminList", pageInfo);
+        return "adminList";
+    }
+
+    @RequestMapping("/adminMovie")
+    public String adminMovie(@RequestParam(required = false,value="pn",defaultValue="1")Integer pn, HttpServletRequest request){
+        //从第一条开始 每页查询五条数据
+        PageHelper.startPage(pn, 5);
+        List<Movie> movies = movieService.selectAll();
+        //将用户信息放入PageInfo对象里
+        PageInfo pageInfo = new PageInfo(movies,3);
+        request.setAttribute("adminMovie", pageInfo);
+        return "adminMovie";
+    }
 }
 

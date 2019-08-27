@@ -30,12 +30,12 @@ public class TVPlayCommentServiceImpl implements TVPlayCommentService {
 
     @Override
     public List<TVPlayComment> selectAll() {
-        return null;
+        return tvPlayCommentMapper.selectAll();
     }
 
     @Override
     public int updateByPrimaryKey(TVPlayComment record) {
-        return 0;
+        return tvPlayCommentMapper.updateByPrimaryKey(record);
     }
 
     @Override
