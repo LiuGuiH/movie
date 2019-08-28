@@ -76,14 +76,18 @@ public class UserController {
         String role=request.getParameter("role");
         if ("0".equals(role)){
             User user=userService.selectByUsername(username);
-            if(password.equals(user.getPassword())){
-                request.getSession().setAttribute("user",user);
+            if (user!=null){
+                if(password.equals(user.getPassword())){
+                    request.getSession().setAttribute("user",user);
+                }
             }
             return "redirect:/";
         }else {
             Admin admin=adminService.selectByAdminname(username);
-            if (password.equals(admin.getAdminpassword())){
-                request.getSession().setAttribute("user",admin);
+            if (admin!=null){
+                if (password.equals(admin.getAdminpassword())){
+                    request.getSession().setAttribute("admin",admin);
+                }
             }
             return "adminIndex";
         }
@@ -255,7 +259,6 @@ public class UserController {
         request.getSession().setAttribute("userInfo",userInfo);
         return "userprofile";
     }
-
 
     @RequestMapping("/saveUserInfo")
     public String saveUserInfo(HttpServletRequest request,@RequestParam Integer userid,@RequestParam String firstname,@RequestParam String lastname,@RequestParam String address){
@@ -429,5 +432,18 @@ public class UserController {
         request.setAttribute("adminMovie", pageInfo);
         return "adminMovie";
     }
+
+    @RequestMapping("/adminCommentDelete")
+    public String adminCommentDelete(@RequestParam Integer moviecommentid){
+            movieCommentService.deleteByPrimaryKey(moviecommentid);
+            return "redirect:/adminComment";
+        }
+
+    @RequestMapping("/adminTVCommentDelete")
+    public String adminTVCommentDelete(@RequestParam Integer typlaycommentid){
+        tvPlayCommentService.deleteByPrimaryKey(typlaycommentid);
+        return "redirect:/adminTVComment";
+    }
+
 }
 

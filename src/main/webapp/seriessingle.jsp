@@ -866,6 +866,10 @@
                         data:{"tvplayid":${tvPlay.tvid},"userid":${user.userid}},
                         datatype:"json",
                         success:function (result) {
+                            if (result=="false"){
+                                alert("请前往登陆！")
+                                window.location.href="${pageContext.request.contextPath}/";
+                            }
                             console.log(result)
                         }
                     })
@@ -878,6 +882,10 @@
                     data:{"tvplayid":${tvPlay.tvid},"userid":${user.userid}},
                     datatype:"json",
                     success:function (result) {
+                        if (result=="false"){
+                            alert("请前往登陆！")
+                            window.location.href="${pageContext.request.contextPath}/";
+                        }
                         console.log(result)
                     }
                 })

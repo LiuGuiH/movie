@@ -31,7 +31,7 @@
                 </div>
                 <div class="field">
                     <label style="line-height:33px;">
-                        ${user.adminname}
+                        ${admin.adminname}
                     </label>
                 </div>
             </div>

@@ -55,7 +55,7 @@
                         <td>${movie.commenttitle}</td>
                         <td>${movie.commentcontent}</td>
                         <td>${movie.commenttime}</td>
-                        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                        <td><div class="button-group"> <a class="button border-red" href="adminCommentDelete?moviecommentid=${movie.moviecommentid}" ><span class="icon-trash-o"></span> 删除</a> </div></td>
                     </tr>
                 </c:forEach>
 

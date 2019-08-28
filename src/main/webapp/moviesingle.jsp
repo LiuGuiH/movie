@@ -788,6 +788,7 @@
         });
 
         $("#heart").click(function () {
+
             var className = document.getElementById("change-heart").className;
             if ("ion-ios-heart"==className){
                 var flag=confirm("确定取消关注吗？")

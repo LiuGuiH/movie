@@ -55,7 +55,7 @@
                         <td>${tvplay.commenttitle}</td>
                         <td>${tvplay.commentcontent}</td>
                         <td>${tvplay.commenttime}</td>
-                        <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                        <td><div class="button-group"> <a class="button border-red" href="adminTVCommentDelete?typlaycommentid=${tvplay.typlaycommentid}" ><span class="icon-trash-o"></span> 删除</a> </div></td>
                     </tr>
                 </c:forEach>
             </c:if>
@@ -106,11 +106,7 @@
 </form>
 <script type="text/javascript">
 
-    function del(id){
-        if(confirm("您确定要删除吗?")){
 
-        }
-    }
 
     $("#checkall").click(function(){
         $("input[name='id[]']").each(function(){
