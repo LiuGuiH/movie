@@ -8,11 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import pojo.*;
 import service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -169,7 +171,7 @@ public class UserController {
             List<Favorite> favorites=favoriteService.selectAll();
             for (Favorite favorite:favorites){
                 if (favorite.getMovieid()==movieid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
-                    request.getSession().setAttribute("movieStatus",favorite.getStatus());
+                    request.setAttribute("movieStatus",favorite.getStatus());
                 }
             }
         }
@@ -196,7 +198,7 @@ public class UserController {
             List<Favorite> favorites=favoriteService.selectAll();
             for (Favorite favorite:favorites){
                 if (favorite.getTvplayid()==tvid&&favorite.getUserid()==((User)request.getSession().getAttribute("user")).getUserid()){
-                    request.getSession().setAttribute("tvPlayStatus",favorite.getStatus());
+                    request.setAttribute("tvPlayStatus",favorite.getStatus());
                 }
             }
         }
@@ -445,5 +447,23 @@ public class UserController {
         return "redirect:/adminTVComment";
     }
 
+    @RequestMapping("/adminAddMovie")
+    public String adminAddMovie(@RequestParam("movieuri")MultipartFile file,String moviename,String movietype,String movieoverview,Double moviestar){
+        String name=file.getOriginalFilename();
+        String movieuri="img/"+name;
+        try {
+            file.transferTo(new File("C:\\Users\\刘桂华\\IdeaMavenProjects\\movie\\src\\main\\webapp\\img\\"+name));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Movie movie=new Movie();
+        movie.setMoviename(moviename);
+        movie.setMovieoverview(movieoverview);
+        movie.setMoviestar(moviestar);
+        movie.setMovietype(movietype);
+        movie.setMovieuri(movieuri);
+        movieService.insert(movie);
+        return "redirect:/adminMovie";
+    }
 }
 

@@ -24,13 +24,13 @@
 <div class="panel admin-panel">
     <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加电影</strong></div>
     <div class="body-content">
-        <form method="post" class="form-x" action="">
+        <form method="post" class="form-x" action="adminAddMovie" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="label">
                     <label>电影名字：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
+                    <input type="text" class="input w50" value="" name="moviename" data-validate="required:请输入电影名" />
                     <div class="tips"></div>
                 </div>
             </div>
@@ -39,28 +39,28 @@
                     <label>图片：</label>
                 </div>
                 <div class="field">
-                    <input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
-                    <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">
+                    <input type="file" name="movieuri" class="input tips" style="width:25%; float:left;" accept="image/png,image/jpg,image/webp,image/PNG,image/gif" >
+                    <%--<input type="text" id="url1" name="img" class="input tips" style="width:25%; float:left;"  value=""  data-toggle="hover" data-place="right" data-image="" />
+                    <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传"  style="float:left;">--%>
                 </div>
             </div>
 
-            <if condition="$iscid eq 1">
-                <div class="form-group">
-                    <div class="label">
-                        <label>电影类别：</label>
-                    </div>
-                    <div class="field">
-                        <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
-                        <div class="tips"></div>
-                    </div>
+            <div class="form-group">
+                <div class="label">
+                    <label>电影类别：</label>
                 </div>
-            </if>
+                <div class="field">
+                    <input type="text" class="input w50" value="" name="movietype" data-validate="required:请输入电影类别" />
+                    <div class="tips"></div>
+                </div>
+            </div>
+
             <div class="form-group">
                 <div class="label">
                     <label>描述：</label>
                 </div>
                 <div class="field">
-                    <textarea class="input" name="note" style=" height:90px;"></textarea>
+                    <textarea class="input" name="movieoverview" style=" height:90px;" placeholder="最多为255个字节" maxlength="255"></textarea>
                     <div class="tips"></div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     <label>评分：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input w50" name="authour" value=""  />
+                    <input type="text" class="input w50" name="moviestar" value=""  />
                     <div class="tips"></div>
                 </div>
             </div>
