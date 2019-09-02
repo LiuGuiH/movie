@@ -67,7 +67,7 @@
                             <td><font color="#00CC99">${movie.moviename}</font></td>
                             <td>${movie.movietype}</td>
                             <td>${movie.moviestar}</td>
-                            <td><div class="button-group"> <a class="button border-main" href="adminAddMovie.jsp"><span class="icon-edit"></span> 修改</a> <a class="button border-red" onclick="return del(${movie.movieid})"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                            <td><div class="button-group"> <a class="button border-main" href="adminAddMovie.jsp"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="adminMovieDelete?movieid=${movie.movieid}"><span class="icon-trash-o"></span> 删除</a> </div></td>
                         </tr>
                     </c:forEach>
 
@@ -119,20 +119,6 @@
     </div>
 </form>
 <script type="text/javascript">
-
-    //单个删除
-    function del(movieid){
-        if(confirm("您确定要删除吗?")){
-            $.ajax({
-                url:"",
-                data:{"movieid":movieid},
-                type:"json",
-                success:function (result) {
-                    window.location.href="";
-                }
-            })
-        }
-    }
 
     //全选
     $("#checkall").click(function(){

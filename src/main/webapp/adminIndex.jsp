@@ -24,7 +24,7 @@
     <div class="logo margin-big-left fadein-top">
         <h1  style="color: black;"><img src="img/y.jpg" class="radius-circle rotate-hover" height="50" style="color: black;" alt="" />后台管理中心</h1>
     </div>
-    <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
+    <div class="head-l"><a class="button button-little bg-green" href="/" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;
         <a class="button button-little bg-red" href="logout"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">

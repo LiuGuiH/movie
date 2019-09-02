@@ -465,5 +465,29 @@ public class UserController {
         movieService.insert(movie);
         return "redirect:/adminMovie";
     }
+
+    @RequestMapping("/adminMovieDelete")
+    public String adminMovieDelete(@RequestParam Integer movieid){
+        movieService.deleteByPrimaryKey(movieid);
+        return "redirect:/adminMovie";
+    }
+
+    @RequestMapping("/adminUserDelete")
+    public String adminUserDelete(@RequestParam Integer userid){
+        userService.deleteByPrimaryKey(userid);
+        return "redirect:/adminUser";
+    }
+
+    @RequestMapping("/adminModifyPassword")
+    public String adminModifyPassword(HttpServletRequest request,@RequestParam(value = "mpass")String mpass,@RequestParam(value = "newpass") String newpass){
+        Admin admin=(Admin)request.getSession().getAttribute("admin");
+        if (admin.getAdminpassword().equals(mpass)){
+            admin.setAdminpassword(newpass);
+            adminService.updateByPrimaryKey(admin);
+            return "redirect:/adminList";
+        }else {
+            return "adminPassword";
+        }
+    }
 }
 
