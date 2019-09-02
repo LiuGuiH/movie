@@ -99,9 +99,8 @@ public class UserController {
     @RequestMapping("/signup")
     public String signup(User user,HttpServletRequest request){
         if (userService.insert(user)>0){
-            request.getSession().setAttribute("user",user);
-        }else {
-
+            User user1=userService.selectByUsername(user.getUsername());
+            request.getSession().setAttribute("user",user1);
         }
         return "redirect:/";
     }

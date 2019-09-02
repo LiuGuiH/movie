@@ -26,7 +26,7 @@
             <div class="row">
                 <label for="repassword-2">
                     re-type Password:
-                    <input type="password" name="password" id="repassword-2" placeholder=""  pattern="^[a-zA-Z0-9-_\.]{6,16}$" required="required" />
+                    <input type="password" name="repassword" id="repassword-2" placeholder=""  pattern="^[a-zA-Z0-9-_\.]{6,16}$" required="required" />
                 </label>
             </div>
             <div class="row">
