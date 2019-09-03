@@ -108,7 +108,7 @@
                     </li>
                     <li><a href="">Help</a></li>
                     <c:if test="${user!=null}">
-                        <li><a>欢迎您：${user.username}</a></li>
+                        <li><a href="userdetails?userid=${user.userid}">欢迎您：${user.username}</a></li>
                         <li><a href="logout">退出登录</a></li>
                     </c:if>
                     <c:if test="${user==null}">
