@@ -48,7 +48,7 @@
                     <td>
                         <div class="button-group">
                             <a type="button" class="button border-main" href=""><span class="icon-edit"></span>修改</a>
-                            <a class="button border-red" href="${user.userid}"><span class="icon-trash-o"></span> 删除</a>
+                            <a class="button border-red" href="adminUserDelete?userid=${user.userid}"><span class="icon-trash-o"></span> 删除</a>
                         </div>
                     </td>
                 </tr>
