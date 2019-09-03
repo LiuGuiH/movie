@@ -115,7 +115,7 @@
                         <div class="rate">
                             <i class="ion-android-star"></i>
                             <p><span>${movie.moviestar}</span> /10<br>
-                                <span class="rv">56 Reviews</span>
+                                <span class="rv">${movieComments.size()} Reviews</span>
                             </p>
                         </div>
 
