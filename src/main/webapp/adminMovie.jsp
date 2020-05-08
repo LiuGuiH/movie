@@ -27,6 +27,7 @@
         <div class="padding border-bottom">
             <ul class="search" style="padding-left:10px;">
                 <li> <a class="button border-main icon-plus-square-o" href="adminAddMovie.jsp"> 添加内容</a> </li>
+                <li> <a class="button border-main icon-plus-square-o" href="exportMovie"> 导出Exel</a> </li>
                 <%--<li>
 
                     <if condition="$iscid eq 1">
